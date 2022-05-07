@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("TMStore.ApiClient")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Api Client kết nối hệ thống quản lý viết bởi HungHD - hoanghungitprotb@gmail.com")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("TMStore.ApiClient")]

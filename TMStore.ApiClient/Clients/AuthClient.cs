@@ -1,10 +1,6 @@
 ﻿using RestSharp;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using TMStore.ApiClient.Helpers;
 using TMStore.ApiClient.Models;
 
@@ -12,7 +8,7 @@ namespace TMStore.ApiClient.Clients
 {
     public class AuthClient : IAuthClient
     {
-        private RestClient client = ClientHelper.GetClient();
+        private readonly RestClient client = ClientHelper.GetClient();
 
         public bool Login(string email, string password)
         {
@@ -20,7 +16,7 @@ namespace TMStore.ApiClient.Clients
             {
                 if (email.IsEmpty())
                 {
-                    throw new Exception("Chưa cugn cấp email");
+                    throw new Exception("Chưa cung cấp email");
                 }
                 if (password.IsEmpty())
                 {

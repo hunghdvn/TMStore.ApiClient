@@ -1,10 +1,7 @@
 ﻿using RestSharp;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using TMStore.ApiClient.Helpers;
 using TMStore.ApiClient.Models;
 
@@ -12,7 +9,7 @@ namespace TMStore.ApiClient.Clients
 {
     public class StoresClient : IStoresClient
     {
-        private RestClient client = ClientHelper.GetClient();
+        private readonly RestClient client = ClientHelper.GetClient();
 
         public List<StoresModel> GetListStores()
         {
