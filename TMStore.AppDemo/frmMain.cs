@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using TMStore.ApiClient.Clients;
 using TMStore.ApiClient.Helpers;
+using TMStore.ApiClient.Models;
 
 namespace TMStore.AppDemo
 {
@@ -71,12 +72,59 @@ namespace TMStore.AppDemo
 
         private void button4_Click(object sender, EventArgs e)
         {
+            if (lbTrangHT.Text.IsEmpty())
+            {
+                return;
+            }
+            var page = int.Parse(lbTrangHT.Text);
+            if (page <= 1)
+            {
+                return;
+            }
 
+            var pageSize = numericUpDown1.Value;
+            var result = productClient.GetListProduct("", 0, 0, 0, page - 1, (int)pageSize);
+            bsProduct.DataSource = result.items;
+            lbSoTrang.Text = result.totalPage.ToString();
+            lbTrangHT.Text = result.page.ToString();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            if (lbTrangHT.Text.IsEmpty())
+            {
+                return;
+            }
+            var page = int.Parse(lbTrangHT.Text);
+            var totalPage = int.Parse(lbSoTrang.Text);
+            if (page >= totalPage)
+            {
+                return;
+            }
 
+            var pageSize = numericUpDown1.Value;
+            var result = productClient.GetListProduct("", 0, 0, 0, page + 1, (int)pageSize);
+            bsProduct.DataSource = result.items;
+            lbSoTrang.Text = result.totalPage.ToString();
+            lbTrangHT.Text = result.page.ToString();
+        }
+
+        private void dataGridView3_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dataGridView3.SelectedRows.Count > 0)
+                {
+                    var selected = dataGridView3.SelectedRows[0].DataBoundItem as ProductItemModel;
+                    if (selected == null)
+                        return;
+                    bsProductOption.DataSource = selected.options;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

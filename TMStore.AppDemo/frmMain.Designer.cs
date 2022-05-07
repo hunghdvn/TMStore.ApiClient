@@ -40,36 +40,6 @@ namespace TMStore.AppDemo
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.grvStores = new System.Windows.Forms.DataGridView();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnLoadStore = new System.Windows.Forms.Button();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lbExpTime = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtNoteNK = new System.Windows.Forms.TextBox();
-            this.txtGateNK = new System.Windows.Forms.TextBox();
-            this.txtStoreCodeNK = new System.Windows.Forms.TextBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.lbTrangHT = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,33 +48,70 @@ namespace TMStore.AppDemo
             this.isOnlineDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.codeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bsStores = new System.Windows.Forms.BindingSource(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnLoadStore = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.productIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bsProduct = new System.Windows.Forms.BindingSource(this.components);
-            this.label11 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.lbSoTrang = new System.Windows.Forms.Label();
+            this.lbTrangHT = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.imageURLDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.externalSKUDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productOptionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsProductOption = new System.Windows.Forms.BindingSource(this.components);
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtNoteNK = new System.Windows.Forms.TextBox();
+            this.txtGateNK = new System.Windows.Forms.TextBox();
+            this.txtStoreCodeNK = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lbExpTime = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grvStores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsStores)).BeginInit();
             this.panel2.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage3.SuspendLayout();
-            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsStores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsProduct)).BeginInit();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsProductOption)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -216,6 +223,59 @@ namespace TMStore.AppDemo
             this.grvStores.Size = new System.Drawing.Size(1197, 573);
             this.grvStores.TabIndex = 0;
             // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            this.addressDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // isHeadDataGridViewCheckBoxColumn
+            // 
+            this.isHeadDataGridViewCheckBoxColumn.DataPropertyName = "isHead";
+            this.isHeadDataGridViewCheckBoxColumn.HeaderText = "isHead";
+            this.isHeadDataGridViewCheckBoxColumn.Name = "isHeadDataGridViewCheckBoxColumn";
+            this.isHeadDataGridViewCheckBoxColumn.ReadOnly = true;
+            // 
+            // keySearchDataGridViewTextBoxColumn
+            // 
+            this.keySearchDataGridViewTextBoxColumn.DataPropertyName = "keySearch";
+            this.keySearchDataGridViewTextBoxColumn.HeaderText = "keySearch";
+            this.keySearchDataGridViewTextBoxColumn.Name = "keySearchDataGridViewTextBoxColumn";
+            this.keySearchDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // isOnlineDataGridViewCheckBoxColumn
+            // 
+            this.isOnlineDataGridViewCheckBoxColumn.DataPropertyName = "isOnline";
+            this.isOnlineDataGridViewCheckBoxColumn.HeaderText = "isOnline";
+            this.isOnlineDataGridViewCheckBoxColumn.Name = "isOnlineDataGridViewCheckBoxColumn";
+            this.isOnlineDataGridViewCheckBoxColumn.ReadOnly = true;
+            // 
+            // codeDataGridViewTextBoxColumn
+            // 
+            this.codeDataGridViewTextBoxColumn.DataPropertyName = "code";
+            this.codeDataGridViewTextBoxColumn.HeaderText = "code";
+            this.codeDataGridViewTextBoxColumn.Name = "codeDataGridViewTextBoxColumn";
+            this.codeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // bsStores
+            // 
+            this.bsStores.DataSource = typeof(TMStore.ApiClient.Models.StoresModel);
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnLoadStore);
@@ -235,6 +295,257 @@ namespace TMStore.AppDemo
             this.btnLoadStore.UseVisualStyleBackColor = true;
             this.btnLoadStore.Click += new System.EventHandler(this.btnLoadStore_Click);
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.splitContainer1);
+            this.tabPage3.Controls.Add(this.panel5);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1203, 629);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Danh sách sản phẩm";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(3, 59);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.dataGridView3);
+            this.splitContainer1.Panel1.Controls.Add(this.panel6);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.dataGridView4);
+            this.splitContainer1.Size = new System.Drawing.Size(1197, 567);
+            this.splitContainer1.SplitterDistance = 588;
+            this.splitContainer1.TabIndex = 3;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AllowUserToAddRows = false;
+            this.dataGridView3.AllowUserToDeleteRows = false;
+            this.dataGridView3.AllowUserToResizeRows = false;
+            this.dataGridView3.AutoGenerateColumns = false;
+            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.productIdDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn1,
+            this.codeDataGridViewTextBoxColumn1});
+            this.dataGridView3.DataSource = this.bsProduct;
+            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView3.Location = new System.Drawing.Point(0, 56);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.ReadOnly = true;
+            this.dataGridView3.RowHeadersVisible = false;
+            this.dataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView3.Size = new System.Drawing.Size(588, 511);
+            this.dataGridView3.TabIndex = 0;
+            this.dataGridView3.SelectionChanged += new System.EventHandler(this.dataGridView3_SelectionChanged);
+            // 
+            // productIdDataGridViewTextBoxColumn
+            // 
+            this.productIdDataGridViewTextBoxColumn.DataPropertyName = "productId";
+            this.productIdDataGridViewTextBoxColumn.HeaderText = "productId";
+            this.productIdDataGridViewTextBoxColumn.Name = "productIdDataGridViewTextBoxColumn";
+            this.productIdDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nameDataGridViewTextBoxColumn1
+            // 
+            this.nameDataGridViewTextBoxColumn1.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn1.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn1.Name = "nameDataGridViewTextBoxColumn1";
+            this.nameDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // codeDataGridViewTextBoxColumn1
+            // 
+            this.codeDataGridViewTextBoxColumn1.DataPropertyName = "code";
+            this.codeDataGridViewTextBoxColumn1.HeaderText = "code";
+            this.codeDataGridViewTextBoxColumn1.Name = "codeDataGridViewTextBoxColumn1";
+            this.codeDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // bsProduct
+            // 
+            this.bsProduct.DataSource = typeof(TMStore.ApiClient.Models.ProductItemModel);
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.button4);
+            this.panel6.Controls.Add(this.button3);
+            this.panel6.Controls.Add(this.lbSoTrang);
+            this.panel6.Controls.Add(this.lbTrangHT);
+            this.panel6.Controls.Add(this.label11);
+            this.panel6.Controls.Add(this.label9);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(588, 56);
+            this.panel6.TabIndex = 1;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(290, 14);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(78, 23);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "Lùi";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(424, 14);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(78, 23);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "Tiếp";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // lbSoTrang
+            // 
+            this.lbSoTrang.AutoSize = true;
+            this.lbSoTrang.Location = new System.Drawing.Point(75, 19);
+            this.lbSoTrang.Name = "lbSoTrang";
+            this.lbSoTrang.Size = new System.Drawing.Size(0, 13);
+            this.lbSoTrang.TabIndex = 0;
+            // 
+            // lbTrangHT
+            // 
+            this.lbTrangHT.AutoSize = true;
+            this.lbTrangHT.Location = new System.Drawing.Point(183, 19);
+            this.lbTrangHT.Name = "lbTrangHT";
+            this.lbTrangHT.Size = new System.Drawing.Size(0, 13);
+            this.lbTrangHT.TabIndex = 0;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(26, 19);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(50, 13);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Số trang:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(139, 19);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(38, 13);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Trang:";
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.AllowUserToAddRows = false;
+            this.dataGridView4.AllowUserToDeleteRows = false;
+            this.dataGridView4.AllowUserToResizeRows = false;
+            this.dataGridView4.AutoGenerateColumns = false;
+            this.dataGridView4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.imageURLDataGridViewTextBoxColumn,
+            this.externalSKUDataGridViewTextBoxColumn,
+            this.sumDataGridViewTextBoxColumn,
+            this.productOptionIDDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn2});
+            this.dataGridView4.DataSource = this.bsProductOption;
+            this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView4.Enabled = false;
+            this.dataGridView4.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.ReadOnly = true;
+            this.dataGridView4.RowHeadersVisible = false;
+            this.dataGridView4.Size = new System.Drawing.Size(605, 567);
+            this.dataGridView4.TabIndex = 0;
+            // 
+            // imageURLDataGridViewTextBoxColumn
+            // 
+            this.imageURLDataGridViewTextBoxColumn.DataPropertyName = "imageURL";
+            this.imageURLDataGridViewTextBoxColumn.HeaderText = "imageURL";
+            this.imageURLDataGridViewTextBoxColumn.Name = "imageURLDataGridViewTextBoxColumn";
+            this.imageURLDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // externalSKUDataGridViewTextBoxColumn
+            // 
+            this.externalSKUDataGridViewTextBoxColumn.DataPropertyName = "externalSKU";
+            this.externalSKUDataGridViewTextBoxColumn.HeaderText = "externalSKU";
+            this.externalSKUDataGridViewTextBoxColumn.Name = "externalSKUDataGridViewTextBoxColumn";
+            this.externalSKUDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sumDataGridViewTextBoxColumn
+            // 
+            this.sumDataGridViewTextBoxColumn.DataPropertyName = "sum";
+            this.sumDataGridViewTextBoxColumn.HeaderText = "sum";
+            this.sumDataGridViewTextBoxColumn.Name = "sumDataGridViewTextBoxColumn";
+            this.sumDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productOptionIDDataGridViewTextBoxColumn
+            // 
+            this.productOptionIDDataGridViewTextBoxColumn.DataPropertyName = "productOptionId";
+            this.productOptionIDDataGridViewTextBoxColumn.HeaderText = "productOptionId";
+            this.productOptionIDDataGridViewTextBoxColumn.Name = "productOptionIDDataGridViewTextBoxColumn";
+            this.productOptionIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nameDataGridViewTextBoxColumn2
+            // 
+            this.nameDataGridViewTextBoxColumn2.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn2.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn2.Name = "nameDataGridViewTextBoxColumn2";
+            this.nameDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // bsProductOption
+            // 
+            this.bsProductOption.DataSource = typeof(TMStore.ApiClient.Models.ProductOptionModel);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.numericUpDown1);
+            this.panel5.Controls.Add(this.button2);
+            this.panel5.Controls.Add(this.label7);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(3, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1197, 56);
+            this.panel5.TabIndex = 2;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(88, 19);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(41, 20);
+            this.numericUpDown1.TabIndex = 2;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(313, 16);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(147, 23);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Lấy danh sách sản phẩm";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(16, 24);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(66, 13);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Số sp/trang:";
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.dataGridView2);
@@ -249,40 +560,31 @@ namespace TMStore.AppDemo
             this.tabPage2.Text = "Nhập kho";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // dataGridView2
             // 
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.lbExpTime);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.txtBaseUrl);
-            this.panel1.Controls.Add(this.btnLogin);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.txtPassword);
-            this.panel1.Controls.Add(this.txtEmail);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1211, 44);
-            this.panel1.TabIndex = 4;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Location = new System.Drawing.Point(444, 391);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(756, 235);
+            this.dataGridView2.TabIndex = 6;
             // 
-            // lbExpTime
+            // dataGridView1
             // 
-            this.lbExpTime.AutoSize = true;
-            this.lbExpTime.Location = new System.Drawing.Point(858, 15);
-            this.lbExpTime.Name = "lbExpTime";
-            this.lbExpTime.Size = new System.Drawing.Size(10, 13);
-            this.lbExpTime.TabIndex = 0;
-            this.lbExpTime.Text = ".";
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 391);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(441, 235);
+            this.dataGridView1.TabIndex = 5;
             // 
-            // label8
+            // panel4
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(794, 15);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 13);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Expire time";
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(3, 128);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1197, 263);
+            this.panel4.TabIndex = 4;
             // 
             // panel3
             // 
@@ -301,7 +603,7 @@ namespace TMStore.AppDemo
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(884, 80);
+            this.button1.Location = new System.Drawing.Point(874, 82);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(97, 23);
             this.button1.TabIndex = 3;
@@ -357,272 +659,40 @@ namespace TMStore.AppDemo
             this.txtStoreCodeNK.Size = new System.Drawing.Size(170, 20);
             this.txtStoreCodeNK.TabIndex = 10;
             // 
-            // dataGridView2
+            // panel1
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(444, 391);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(756, 235);
-            this.dataGridView2.TabIndex = 6;
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.lbExpTime);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.txtBaseUrl);
+            this.panel1.Controls.Add(this.btnLogin);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.txtPassword);
+            this.panel1.Controls.Add(this.txtEmail);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1211, 44);
+            this.panel1.TabIndex = 4;
             // 
-            // dataGridView1
+            // label8
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 391);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(441, 235);
-            this.dataGridView1.TabIndex = 5;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(794, 15);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(58, 13);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Expire time";
             // 
-            // panel4
+            // lbExpTime
             // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(3, 128);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1197, 263);
-            this.panel4.TabIndex = 4;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.splitContainer1);
-            this.tabPage3.Controls.Add(this.panel5);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1203, 629);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Danh sách sản phẩm";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.numericUpDown1);
-            this.panel5.Controls.Add(this.button2);
-            this.panel5.Controls.Add(this.label7);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(3, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1197, 56);
-            this.panel5.TabIndex = 2;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(313, 16);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(147, 23);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Lấy danh sách sản phẩm";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // splitContainer1
-            // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(3, 59);
-            this.splitContainer1.Name = "splitContainer1";
-            // 
-            // splitContainer1.Panel1
-            // 
-            this.splitContainer1.Panel1.Controls.Add(this.dataGridView3);
-            this.splitContainer1.Panel1.Controls.Add(this.panel6);
-            // 
-            // splitContainer1.Panel2
-            // 
-            this.splitContainer1.Panel2.Controls.Add(this.dataGridView4);
-            this.splitContainer1.Size = new System.Drawing.Size(1197, 567);
-            this.splitContainer1.SplitterDistance = 588;
-            this.splitContainer1.TabIndex = 3;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.AutoGenerateColumns = false;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.productIdDataGridViewTextBoxColumn,
-            this.nameDataGridViewTextBoxColumn1,
-            this.codeDataGridViewTextBoxColumn1});
-            this.dataGridView3.DataSource = this.bsProduct;
-            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView3.Location = new System.Drawing.Point(0, 56);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(588, 511);
-            this.dataGridView3.TabIndex = 0;
-            // 
-            // dataGridView4
-            // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView4.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(605, 567);
-            this.dataGridView4.TabIndex = 0;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.button4);
-            this.panel6.Controls.Add(this.button3);
-            this.panel6.Controls.Add(this.lbSoTrang);
-            this.panel6.Controls.Add(this.lbTrangHT);
-            this.panel6.Controls.Add(this.label11);
-            this.panel6.Controls.Add(this.label9);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(588, 56);
-            this.panel6.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(16, 24);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 13);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Số sp/trang:";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(424, 14);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(78, 23);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Tiếp";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(290, 14);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(78, 23);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Lùi";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(139, 19);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(38, 13);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Trang:";
-            // 
-            // lbTrangHT
-            // 
-            this.lbTrangHT.AutoSize = true;
-            this.lbTrangHT.Location = new System.Drawing.Point(183, 19);
-            this.lbTrangHT.Name = "lbTrangHT";
-            this.lbTrangHT.Size = new System.Drawing.Size(10, 13);
-            this.lbTrangHT.TabIndex = 0;
-            this.lbTrangHT.Text = ".";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(88, 19);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(41, 20);
-            this.numericUpDown1.TabIndex = 2;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            30,
-            0,
-            0,
-            0});
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // addressDataGridViewTextBoxColumn
-            // 
-            this.addressDataGridViewTextBoxColumn.DataPropertyName = "address";
-            this.addressDataGridViewTextBoxColumn.HeaderText = "address";
-            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            this.addressDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // isHeadDataGridViewCheckBoxColumn
-            // 
-            this.isHeadDataGridViewCheckBoxColumn.DataPropertyName = "isHead";
-            this.isHeadDataGridViewCheckBoxColumn.HeaderText = "isHead";
-            this.isHeadDataGridViewCheckBoxColumn.Name = "isHeadDataGridViewCheckBoxColumn";
-            this.isHeadDataGridViewCheckBoxColumn.ReadOnly = true;
-            // 
-            // keySearchDataGridViewTextBoxColumn
-            // 
-            this.keySearchDataGridViewTextBoxColumn.DataPropertyName = "keySearch";
-            this.keySearchDataGridViewTextBoxColumn.HeaderText = "keySearch";
-            this.keySearchDataGridViewTextBoxColumn.Name = "keySearchDataGridViewTextBoxColumn";
-            this.keySearchDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // isOnlineDataGridViewCheckBoxColumn
-            // 
-            this.isOnlineDataGridViewCheckBoxColumn.DataPropertyName = "isOnline";
-            this.isOnlineDataGridViewCheckBoxColumn.HeaderText = "isOnline";
-            this.isOnlineDataGridViewCheckBoxColumn.Name = "isOnlineDataGridViewCheckBoxColumn";
-            this.isOnlineDataGridViewCheckBoxColumn.ReadOnly = true;
-            // 
-            // codeDataGridViewTextBoxColumn
-            // 
-            this.codeDataGridViewTextBoxColumn.DataPropertyName = "code";
-            this.codeDataGridViewTextBoxColumn.HeaderText = "code";
-            this.codeDataGridViewTextBoxColumn.Name = "codeDataGridViewTextBoxColumn";
-            this.codeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // bsStores
-            // 
-            this.bsStores.DataSource = typeof(TMStore.ApiClient.Models.StoresModel);
-            // 
-            // productIdDataGridViewTextBoxColumn
-            // 
-            this.productIdDataGridViewTextBoxColumn.DataPropertyName = "productId";
-            this.productIdDataGridViewTextBoxColumn.HeaderText = "productId";
-            this.productIdDataGridViewTextBoxColumn.Name = "productIdDataGridViewTextBoxColumn";
-            // 
-            // nameDataGridViewTextBoxColumn1
-            // 
-            this.nameDataGridViewTextBoxColumn1.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn1.HeaderText = "name";
-            this.nameDataGridViewTextBoxColumn1.Name = "nameDataGridViewTextBoxColumn1";
-            // 
-            // codeDataGridViewTextBoxColumn1
-            // 
-            this.codeDataGridViewTextBoxColumn1.DataPropertyName = "code";
-            this.codeDataGridViewTextBoxColumn1.HeaderText = "code";
-            this.codeDataGridViewTextBoxColumn1.Name = "codeDataGridViewTextBoxColumn1";
-            // 
-            // bsProduct
-            // 
-            this.bsProduct.DataSource = typeof(TMStore.ApiClient.Models.ProductItemModel);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(26, 19);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(50, 13);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Số trang:";
-            // 
-            // lbSoTrang
-            // 
-            this.lbSoTrang.AutoSize = true;
-            this.lbSoTrang.Location = new System.Drawing.Point(75, 19);
-            this.lbSoTrang.Name = "lbSoTrang";
-            this.lbSoTrang.Size = new System.Drawing.Size(10, 13);
-            this.lbSoTrang.TabIndex = 0;
-            this.lbSoTrang.Text = ".";
+            this.lbExpTime.AutoSize = true;
+            this.lbExpTime.Location = new System.Drawing.Point(858, 15);
+            this.lbExpTime.Name = "lbExpTime";
+            this.lbExpTime.Size = new System.Drawing.Size(10, 13);
+            this.lbExpTime.TabIndex = 0;
+            this.lbExpTime.Text = ".";
             // 
             // frmMain
             // 
@@ -636,28 +706,29 @@ namespace TMStore.AppDemo
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grvStores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsStores)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage3.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsProduct)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsProductOption)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsStores)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsProduct)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -718,6 +789,12 @@ namespace TMStore.AppDemo
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label lbSoTrang;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.BindingSource bsProductOption;
+        private System.Windows.Forms.DataGridViewTextBoxColumn imageURLDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn externalSKUDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sumDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productOptionIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn2;
     }
 }
 

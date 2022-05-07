@@ -68,6 +68,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="Properties\DataSources\TMStore.ApiClient.Models.ProductItemModel.datasource" />
+    <None Include="Properties\DataSources\TMStore.ApiClient.Models.ProductOptionModel.datasource" />
     <None Include="Properties\DataSources\TMStore.ApiClient.Models.StoreModel.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
