@@ -30,20 +30,20 @@ namespace TMStore.AppDemo
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Node1");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Node2");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Node3");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Node0", new System.Windows.Forms.TreeNode[] {
-            treeNode9,
-            treeNode10,
-            treeNode11});
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Node5");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Node6");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Node7");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Node4", new System.Windows.Forms.TreeNode[] {
-            treeNode13,
-            treeNode14,
-            treeNode15});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Node1");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Node2");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Node3");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Node0", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3});
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Node5");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Node6");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Node7");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Node4", new System.Windows.Forms.TreeNode[] {
+            treeNode5,
+            treeNode6,
+            treeNode7});
             this.label1 = new System.Windows.Forms.Label();
             this.txtBaseUrl = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -112,6 +112,18 @@ namespace TMStore.AppDemo
             this.lbExpTime = new System.Windows.Forms.Label();
             this.bsMatHang = new System.Windows.Forms.BindingSource(this.components);
             this.bsChungLoai = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtStoreCodeXK = new System.Windows.Forms.TextBox();
+            this.txtStoreDestinationXK = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtNoteXK = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtGateXK = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.txtRfidXK = new System.Windows.Forms.RichTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grvStores)).BeginInit();
@@ -135,6 +147,7 @@ namespace TMStore.AppDemo
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsMatHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsChungLoai)).BeginInit();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -203,6 +216,7 @@ namespace TMStore.AppDemo
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 44);
             this.tabControl1.Name = "tabControl1";
@@ -588,25 +602,25 @@ namespace TMStore.AppDemo
             this.tvNhapKho.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tvNhapKho.Location = new System.Drawing.Point(3, 205);
             this.tvNhapKho.Name = "tvNhapKho";
-            treeNode9.Name = "Node1";
-            treeNode9.Text = "Node1";
-            treeNode10.Name = "Node2";
-            treeNode10.Text = "Node2";
-            treeNode11.Name = "Node3";
-            treeNode11.Text = "Node3";
-            treeNode12.Name = "Node0";
-            treeNode12.Text = "Node0";
-            treeNode13.Name = "Node5";
-            treeNode13.Text = "Node5";
-            treeNode14.Name = "Node6";
-            treeNode14.Text = "Node6";
-            treeNode15.Name = "Node7";
-            treeNode15.Text = "Node7";
-            treeNode16.Name = "Node4";
-            treeNode16.Text = "Node4";
+            treeNode1.Name = "Node1";
+            treeNode1.Text = "Node1";
+            treeNode2.Name = "Node2";
+            treeNode2.Text = "Node2";
+            treeNode3.Name = "Node3";
+            treeNode3.Text = "Node3";
+            treeNode4.Name = "Node0";
+            treeNode4.Text = "Node0";
+            treeNode5.Name = "Node5";
+            treeNode5.Text = "Node5";
+            treeNode6.Name = "Node6";
+            treeNode6.Text = "Node6";
+            treeNode7.Name = "Node7";
+            treeNode7.Text = "Node7";
+            treeNode8.Name = "Node4";
+            treeNode8.Text = "Node4";
             this.tvNhapKho.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode12,
-            treeNode16});
+            treeNode4,
+            treeNode8});
             this.tvNhapKho.Size = new System.Drawing.Size(1197, 421);
             this.tvNhapKho.TabIndex = 5;
             // 
@@ -802,6 +816,119 @@ namespace TMStore.AppDemo
             // 
             this.bsChungLoai.DataSource = typeof(TMStore.ApiClient.Models.ProductOptionModel);
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.txtRfidXK);
+            this.tabPage4.Controls.Add(this.button6);
+            this.tabPage4.Controls.Add(this.label17);
+            this.tabPage4.Controls.Add(this.txtGateXK);
+            this.tabPage4.Controls.Add(this.label18);
+            this.tabPage4.Controls.Add(this.label16);
+            this.tabPage4.Controls.Add(this.txtNoteXK);
+            this.tabPage4.Controls.Add(this.label15);
+            this.tabPage4.Controls.Add(this.label4);
+            this.tabPage4.Controls.Add(this.txtStoreDestinationXK);
+            this.tabPage4.Controls.Add(this.txtStoreCodeXK);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1203, 629);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Xuất kho";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(24, 19);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(66, 13);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Mã kho xuất";
+            // 
+            // txtStoreCodeXK
+            // 
+            this.txtStoreCodeXK.Location = new System.Drawing.Point(131, 16);
+            this.txtStoreCodeXK.Name = "txtStoreCodeXK";
+            this.txtStoreCodeXK.Size = new System.Drawing.Size(170, 20);
+            this.txtStoreCodeXK.TabIndex = 12;
+            // 
+            // txtStoreDestinationXK
+            // 
+            this.txtStoreDestinationXK.Location = new System.Drawing.Point(447, 19);
+            this.txtStoreDestinationXK.Name = "txtStoreDestinationXK";
+            this.txtStoreDestinationXK.Size = new System.Drawing.Size(170, 20);
+            this.txtStoreDestinationXK.TabIndex = 12;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(340, 22);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(69, 13);
+            this.label15.TabIndex = 11;
+            this.label15.Text = "Mã kho đích";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(22, 48);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(30, 13);
+            this.label16.TabIndex = 13;
+            this.label16.Text = "Note";
+            // 
+            // txtNoteXK
+            // 
+            this.txtNoteXK.Location = new System.Drawing.Point(131, 45);
+            this.txtNoteXK.Multiline = true;
+            this.txtNoteXK.Name = "txtNoteXK";
+            this.txtNoteXK.Size = new System.Drawing.Size(757, 43);
+            this.txtNoteXK.TabIndex = 14;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(650, 22);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(30, 13);
+            this.label17.TabIndex = 15;
+            this.label17.Text = "Gate";
+            // 
+            // txtGateXK
+            // 
+            this.txtGateXK.Location = new System.Drawing.Point(718, 19);
+            this.txtGateXK.Name = "txtGateXK";
+            this.txtGateXK.Size = new System.Drawing.Size(170, 20);
+            this.txtGateXK.TabIndex = 16;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(22, 97);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(26, 13);
+            this.label18.TabIndex = 13;
+            this.label18.Text = "rfids";
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(791, 449);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(97, 23);
+            this.button6.TabIndex = 17;
+            this.button6.Text = "Xuất kho";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // txtRfidXK
+            // 
+            this.txtRfidXK.Location = new System.Drawing.Point(131, 94);
+            this.txtRfidXK.Name = "txtRfidXK";
+            this.txtRfidXK.Size = new System.Drawing.Size(757, 279);
+            this.txtRfidXK.TabIndex = 18;
+            this.txtRfidXK.Text = "";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -839,6 +966,8 @@ namespace TMStore.AppDemo
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsMatHang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsChungLoai)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -913,6 +1042,18 @@ namespace TMStore.AppDemo
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TreeView tvNhapKho;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txtGateXK;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txtNoteXK;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtStoreDestinationXK;
+        private System.Windows.Forms.TextBox txtStoreCodeXK;
+        private System.Windows.Forms.RichTextBox txtRfidXK;
     }
 }
 

@@ -66,7 +66,11 @@ namespace TMStore.ApiClient.Clients
                     throw new Exception("Chưa có rfIds");
                 }
 
-                var result = ApiHelper.Post<BaseResponse<List<ExportResult>>>("api/Inventories/input", new ExportRequest { storeCode = storeCode, gate = gate, note = note, storeDestination = storeDestination, rfIds = rfIds });
+                var result = ApiHelper.Post<BaseResponse<List<ExportResult>>>("api/Inventories/export", new ExportRequest { storeCode = storeCode, gate = gate, note = note, storeDestination = storeDestination, rfIds = rfIds });
+                if (!result.success)
+                {
+                    throw new Exception(result.errorCode + ": " + result.message);
+                }
                 return result.data;
             }
             catch (Exception ex)

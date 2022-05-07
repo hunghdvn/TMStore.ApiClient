@@ -219,8 +219,27 @@ namespace TMStore.AppDemo
         {
             try
             {
-                inventoryClient.NhapKho(txtStoreCodeNK.Text.Trim(), txtGateNK.Text.Trim(), txtNoteNK.Text.Trim(), dtLicenseDate.Value, products);
+                var result = inventoryClient.NhapKho(txtStoreCodeNK.Text.Trim(), txtGateNK.Text.Trim(), txtNoteNK.Text.Trim(), dtLicenseDate.Value, products);
                 MessageBox.Show("Đã nhập kho");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtRfidXK.Text.IsEmpty())
+                {
+                    MessageBox.Show("Chưa nhập Rfid");
+                    return;
+                }
+                var lstRfids = txtRfidXK.Text.Split('\n').ToList();
+                var result = inventoryClient.XuatKho(txtStoreCodeXK.Text.Trim(), txtStoreDestinationXK.Text.Trim(), txtNoteXK.Text.Trim(), txtGateXK.Text.Trim(), lstRfids);
+                MessageBox.Show("Đã xuất kho");
             }
             catch (Exception ex)
             {

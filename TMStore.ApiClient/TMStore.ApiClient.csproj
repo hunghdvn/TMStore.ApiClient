@@ -53,10 +53,9 @@
     <Compile Include="Clients\Auth\AuthClient.cs" />
     <Compile Include="Clients\BaseResponse.cs" />
     <Compile Include="Clients\Auth\IAuthClient.cs" />
-    <Compile Include="Clients\ExportRequest.cs" />
+    <Compile Include="Clients\Inventory\ExportRequest.cs" />
     <Compile Include="Clients\Inventory\ExportResult.cs" />
     <Compile Include="Clients\Inventory\IInventoryClient.cs" />
-    <Compile Include="Clients\Inventory\InventoriesInputRequest.cs" />
     <Compile Include="Clients\Inventory\InventoryClient.cs" />
     <Compile Include="Clients\Tid\ITidClient.cs" />
     <Compile Include="Clients\Product\ProductOptionResponse.cs" />
