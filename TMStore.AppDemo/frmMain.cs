@@ -9,12 +9,14 @@ namespace TMStore.AppDemo
     {
         private readonly IAuthClient authClient;
         private readonly IStoresClient storesClient;
+        private readonly IProductClient productClient;
 
         public frmMain()
         {
             InitializeComponent();
             authClient = new AuthClient(); ;
             storesClient = new StoresClient();
+            productClient = new ProductClient();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -43,12 +45,38 @@ namespace TMStore.AppDemo
             {
                 var lstStores = storesClient.GetListStores();
                 bsStores.DataSource = lstStores;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var pageSize = numericUpDown1.Value;
+                var result = productClient.GetListProduct("", 0, 0, 0, 1, (int)pageSize);
+                bsProduct.DataSource = result.items;
+                lbSoTrang.Text = result.totalPage.ToString();
+                lbTrangHT.Text = result.page.ToString();
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
