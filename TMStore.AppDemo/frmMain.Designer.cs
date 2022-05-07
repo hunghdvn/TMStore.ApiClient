@@ -39,11 +39,12 @@ namespace TMStore.AppDemo
             this.btnLogin = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.grvStores = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnLoadStore = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbExpTime = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,14 +52,13 @@ namespace TMStore.AppDemo
             this.keySearchDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.isOnlineDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.codeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.storeModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.btnLoadStore = new System.Windows.Forms.Button();
+            this.bsStores = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grvStores)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.storeModelBindingSource)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bsStores)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -130,20 +130,63 @@ namespace TMStore.AppDemo
             this.tabControl1.Location = new System.Drawing.Point(0, 44);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(979, 536);
+            this.tabControl1.Size = new System.Drawing.Size(1211, 655);
             this.tabControl1.TabIndex = 3;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Controls.Add(this.grvStores);
             this.tabPage1.Controls.Add(this.panel2);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(971, 510);
+            this.tabPage1.Size = new System.Drawing.Size(1203, 629);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Danh sách kho";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // grvStores
+            // 
+            this.grvStores.AllowUserToAddRows = false;
+            this.grvStores.AllowUserToDeleteRows = false;
+            this.grvStores.AutoGenerateColumns = false;
+            this.grvStores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grvStores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grvStores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn,
+            this.addressDataGridViewTextBoxColumn,
+            this.isHeadDataGridViewCheckBoxColumn,
+            this.keySearchDataGridViewTextBoxColumn,
+            this.isOnlineDataGridViewCheckBoxColumn,
+            this.codeDataGridViewTextBoxColumn});
+            this.grvStores.DataSource = this.bsStores;
+            this.grvStores.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grvStores.Location = new System.Drawing.Point(3, 53);
+            this.grvStores.Name = "grvStores";
+            this.grvStores.ReadOnly = true;
+            this.grvStores.RowHeadersVisible = false;
+            this.grvStores.Size = new System.Drawing.Size(1197, 573);
+            this.grvStores.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnLoadStore);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1197, 50);
+            this.panel2.TabIndex = 1;
+            // 
+            // btnLoadStore
+            // 
+            this.btnLoadStore.Location = new System.Drawing.Point(11, 13);
+            this.btnLoadStore.Name = "btnLoadStore";
+            this.btnLoadStore.Size = new System.Drawing.Size(136, 23);
+            this.btnLoadStore.TabIndex = 0;
+            this.btnLoadStore.Text = "Lấy danh sách kho";
+            this.btnLoadStore.UseVisualStyleBackColor = true;
+            this.btnLoadStore.Click += new System.EventHandler(this.btnLoadStore_Click);
             // 
             // tabPage2
             // 
@@ -168,7 +211,7 @@ namespace TMStore.AppDemo
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(979, 44);
+            this.panel1.Size = new System.Drawing.Size(1211, 44);
             this.panel1.TabIndex = 4;
             // 
             // lbExpTime
@@ -180,108 +223,75 @@ namespace TMStore.AppDemo
             this.lbExpTime.TabIndex = 0;
             this.lbExpTime.Text = "Base url";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.nameDataGridViewTextBoxColumn,
-            this.addressDataGridViewTextBoxColumn,
-            this.isHeadDataGridViewCheckBoxColumn,
-            this.keySearchDataGridViewTextBoxColumn,
-            this.isOnlineDataGridViewCheckBoxColumn,
-            this.codeDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.storeModelBindingSource;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 53);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(965, 454);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btnLoadStore);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(965, 50);
-            this.panel2.TabIndex = 1;
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
             this.idDataGridViewTextBoxColumn.HeaderText = "id";
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // nameDataGridViewTextBoxColumn
             // 
             this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
             this.nameDataGridViewTextBoxColumn.HeaderText = "name";
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // addressDataGridViewTextBoxColumn
             // 
             this.addressDataGridViewTextBoxColumn.DataPropertyName = "address";
             this.addressDataGridViewTextBoxColumn.HeaderText = "address";
             this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            this.addressDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // isHeadDataGridViewCheckBoxColumn
             // 
             this.isHeadDataGridViewCheckBoxColumn.DataPropertyName = "isHead";
             this.isHeadDataGridViewCheckBoxColumn.HeaderText = "isHead";
             this.isHeadDataGridViewCheckBoxColumn.Name = "isHeadDataGridViewCheckBoxColumn";
+            this.isHeadDataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // keySearchDataGridViewTextBoxColumn
             // 
             this.keySearchDataGridViewTextBoxColumn.DataPropertyName = "keySearch";
             this.keySearchDataGridViewTextBoxColumn.HeaderText = "keySearch";
             this.keySearchDataGridViewTextBoxColumn.Name = "keySearchDataGridViewTextBoxColumn";
+            this.keySearchDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // isOnlineDataGridViewCheckBoxColumn
             // 
             this.isOnlineDataGridViewCheckBoxColumn.DataPropertyName = "isOnline";
             this.isOnlineDataGridViewCheckBoxColumn.HeaderText = "isOnline";
             this.isOnlineDataGridViewCheckBoxColumn.Name = "isOnlineDataGridViewCheckBoxColumn";
+            this.isOnlineDataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // codeDataGridViewTextBoxColumn
             // 
             this.codeDataGridViewTextBoxColumn.DataPropertyName = "code";
             this.codeDataGridViewTextBoxColumn.HeaderText = "code";
             this.codeDataGridViewTextBoxColumn.Name = "codeDataGridViewTextBoxColumn";
+            this.codeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // storeModelBindingSource
+            // bsStores
             // 
-            this.storeModelBindingSource.DataSource = typeof(TMStore.ApiClient.Models.StoreModel);
-            // 
-            // btnLoadStore
-            // 
-            this.btnLoadStore.Location = new System.Drawing.Point(11, 13);
-            this.btnLoadStore.Name = "btnLoadStore";
-            this.btnLoadStore.Size = new System.Drawing.Size(136, 23);
-            this.btnLoadStore.TabIndex = 0;
-            this.btnLoadStore.Text = "Lấy danh sách kho";
-            this.btnLoadStore.UseVisualStyleBackColor = true;
-            this.btnLoadStore.Click += new System.EventHandler(this.btnLoadStore_Click);
+            this.bsStores.DataSource = typeof(TMStore.ApiClient.Models.StoresModel);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(979, 580);
+            this.ClientSize = new System.Drawing.Size(1211, 699);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
             this.Name = "frmMain";
             this.Text = "Form1";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.grvStores)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.storeModelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsStores)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -300,7 +310,7 @@ namespace TMStore.AppDemo
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbExpTime;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView grvStores;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
@@ -308,7 +318,7 @@ namespace TMStore.AppDemo
         private System.Windows.Forms.DataGridViewTextBoxColumn keySearchDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn isOnlineDataGridViewCheckBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource storeModelBindingSource;
+        private System.Windows.Forms.BindingSource bsStores;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnLoadStore;
     }

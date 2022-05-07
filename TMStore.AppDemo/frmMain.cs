@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TMStore.ApiClient.Clients;
 using TMStore.ApiClient.Helpers;
@@ -14,11 +7,14 @@ namespace TMStore.AppDemo
 {
     public partial class frmMain : Form
     {
-        private IAuthClient authClient = new AuthClient();
+        private readonly IAuthClient authClient;
+        private readonly IStoresClient storesClient;
 
         public frmMain()
         {
             InitializeComponent();
+            authClient = new AuthClient(); ;
+            storesClient = new StoresClient();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -43,7 +39,16 @@ namespace TMStore.AppDemo
 
         private void btnLoadStore_Click(object sender, EventArgs e)
         {
+            try
+            {
+                var lstStores = storesClient.GetListStores();
+                bsStores.DataSource = lstStores;
 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

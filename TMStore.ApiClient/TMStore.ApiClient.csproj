@@ -52,13 +52,15 @@
   <ItemGroup>
     <Compile Include="Clients\AuthClient.cs" />
     <Compile Include="Clients\IAuthClient.cs" />
+    <Compile Include="Clients\IStoresClient.cs" />
+    <Compile Include="Clients\StoresClient.cs" />
     <Compile Include="Helpers\ClientHelper.cs" />
     <Compile Include="Helpers\JsonHelper.cs" />
     <Compile Include="Helpers\StringHelper.cs" />
     <Compile Include="Helpers\TokenHelper.cs" />
     <Compile Include="Clients\AuthRequest.cs" />
     <Compile Include="Models\AuthModel.cs" />
-    <Compile Include="Models\StoreModel.cs" />
+    <Compile Include="Models\StoresModel.cs" />
     <Compile Include="Models\TokenPayload.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

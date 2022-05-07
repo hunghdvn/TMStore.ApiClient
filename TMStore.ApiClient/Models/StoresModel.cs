@@ -1,6 +1,6 @@
 ﻿namespace TMStore.ApiClient.Models
 {
-    public class StoreModel
+    public class StoresModel
     {
         public string id { get; set; }
         public string name { get; set; }
