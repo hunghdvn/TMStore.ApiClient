@@ -29,6 +29,10 @@ namespace TMStore.ApiClient.Clients
                 }
 
                 var result = ApiHelper.Post<BaseResponse<InventoryModel>>("api/Inventories/input", new InventoryModel { storeCode = storeCode, gate = gate, note = note, licenseDateDt = licenseDateDt, products = products });
+                if (!result.success)
+                {
+                    throw new Exception(result.errorCode + ": " + result.message);
+                }
                 return result.data;
             }
             catch (Exception ex)

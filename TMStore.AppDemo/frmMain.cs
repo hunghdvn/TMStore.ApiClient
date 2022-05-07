@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 using TMStore.ApiClient.Clients;
 using TMStore.ApiClient.Helpers;
@@ -11,6 +13,7 @@ namespace TMStore.AppDemo
         private readonly IAuthClient authClient;
         private readonly IStoresClient storesClient;
         private readonly IProductClient productClient;
+        private readonly IInventoryClient inventoryClient;
 
         public frmMain()
         {
@@ -18,6 +21,7 @@ namespace TMStore.AppDemo
             authClient = new AuthClient(); ;
             storesClient = new StoresClient();
             productClient = new ProductClient();
+            inventoryClient = new InventoryClient();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -72,41 +76,55 @@ namespace TMStore.AppDemo
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (lbTrangHT.Text.IsEmpty())
+            try
             {
-                return;
-            }
-            var page = int.Parse(lbTrangHT.Text);
-            if (page <= 1)
-            {
-                return;
-            }
+                if (lbTrangHT.Text.IsEmpty())
+                {
+                    return;
+                }
+                var page = int.Parse(lbTrangHT.Text);
+                if (page <= 1)
+                {
+                    return;
+                }
 
-            var pageSize = numericUpDown1.Value;
-            var result = productClient.GetListProduct("", 0, 0, 0, page - 1, (int)pageSize);
-            bsProduct.DataSource = result.items;
-            lbSoTrang.Text = result.totalPage.ToString();
-            lbTrangHT.Text = result.page.ToString();
+                var pageSize = numericUpDown1.Value;
+                var result = productClient.GetListProduct("", 0, 0, 0, page - 1, (int)pageSize);
+                bsProduct.DataSource = result.items;
+                lbSoTrang.Text = result.totalPage.ToString();
+                lbTrangHT.Text = result.page.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (lbTrangHT.Text.IsEmpty())
+            try
             {
-                return;
-            }
-            var page = int.Parse(lbTrangHT.Text);
-            var totalPage = int.Parse(lbSoTrang.Text);
-            if (page >= totalPage)
-            {
-                return;
-            }
+                if (lbTrangHT.Text.IsEmpty())
+                {
+                    return;
+                }
+                var page = int.Parse(lbTrangHT.Text);
+                var totalPage = int.Parse(lbSoTrang.Text);
+                if (page >= totalPage)
+                {
+                    return;
+                }
 
-            var pageSize = numericUpDown1.Value;
-            var result = productClient.GetListProduct("", 0, 0, 0, page + 1, (int)pageSize);
-            bsProduct.DataSource = result.items;
-            lbSoTrang.Text = result.totalPage.ToString();
-            lbTrangHT.Text = result.page.ToString();
+                var pageSize = numericUpDown1.Value;
+                var result = productClient.GetListProduct("", 0, 0, 0, page + 1, (int)pageSize);
+                bsProduct.DataSource = result.items;
+                lbSoTrang.Text = result.totalPage.ToString();
+                lbTrangHT.Text = result.page.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void dataGridView3_SelectionChanged(object sender, EventArgs e)
@@ -120,6 +138,89 @@ namespace TMStore.AppDemo
                         return;
                     bsProductOption.DataSource = selected.options;
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private List<ProductModel> products = null;
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtOption.Text.IsEmpty())
+                {
+                    MessageBox.Show("Thiếu option id");
+                    return;
+                }
+                if (txtRfid.Text.IsEmpty())
+                {
+                    MessageBox.Show("Thiếu RFID");
+                    return;
+                }
+                if (products.IsEmpty())
+                {
+                    products = new List<ProductModel>();
+                }
+                int optionId = int.Parse(txtOption.Text);
+                var product = products.FirstOrDefault(s => s.productOptionId == optionId);
+                if (product == null)
+                {
+                    product = new ProductModel
+                    {
+                        printQuantity = 1,
+                        productOptionId = optionId,
+                        rfids = new List<string> { txtRfid.Text.Trim() }
+                    };
+                    products.Add(product);
+                }
+                else
+                {
+                    product.rfids.Add(txtRfid.Text.Trim());
+                    product.printQuantity += 1;
+                }
+                ShowDataNhapKho();
+                txtRfid.Text = "";
+                txtRfid.Focus();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void ShowDataNhapKho()
+        {
+            tvNhapKho.Nodes.Clear();
+            var lstOptionId = products.Select(s => s.productOptionId).ToList();
+            foreach (var item in lstOptionId)
+            {
+                var childNode = new TreeNode();
+                childNode.Text = item.ToString();
+                var rfIds = products.FirstOrDefault(s => s.productOptionId == item).rfids;
+                foreach (var rfid in rfIds)
+                {
+                    childNode.Nodes.Add(rfid);
+                }
+                tvNhapKho.Nodes.Add(childNode);
+            }
+            tvNhapKho.ExpandAll();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                inventoryClient.NhapKho(txtStoreCodeNK.Text.Trim(), txtGateNK.Text.Trim(), txtNoteNK.Text.Trim(), dtLicenseDate.Value, products);
+                MessageBox.Show("Đã nhập kho");
             }
             catch (Exception ex)
             {

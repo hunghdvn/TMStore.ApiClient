@@ -58,7 +58,8 @@
     <Compile Include="Clients\Inventory\IInventoryClient.cs" />
     <Compile Include="Clients\Inventory\InventoriesInputRequest.cs" />
     <Compile Include="Clients\Inventory\InventoryClient.cs" />
-    <Compile Include="Clients\ProductOptionResponse.cs" />
+    <Compile Include="Clients\Tid\ITidClient.cs" />
+    <Compile Include="Clients\Product\ProductOptionResponse.cs" />
     <Compile Include="Clients\Product\IProductClient.cs" />
     <Compile Include="Clients\Product\ProductClient.cs" />
     <Compile Include="Clients\Store\IStoresClient.cs" />
