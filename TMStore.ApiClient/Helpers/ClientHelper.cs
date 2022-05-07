@@ -7,6 +7,8 @@ namespace TMStore.ApiClient.Helpers
     {
         private static string BaseUrl;
         private static string Token;
+        public static string User;
+        public static string Password;
 
         public static void SetBaseUrl(string baseUrl)
         {

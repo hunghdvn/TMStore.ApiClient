@@ -27,7 +27,7 @@ namespace TMStore.ApiClient.Clients
                     email = email,
                     password = password
                 };
-                var request = new RestRequest(ClientHelper.GetBaseUrl() + "v1/_Auth", Method.POST);
+                var request = new RestRequest(ClientHelper.GetBaseUrl() + "api/v1/_Auth", Method.POST);
                 request.RequestFormat = DataFormat.Json;
                 request.AddBody(body);
                 var response = client.Execute(request);

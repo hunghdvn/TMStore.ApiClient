@@ -1,6 +1,7 @@
 ﻿using JWT;
 using JWT.Serializers;
 using System;
+using TMStore.ApiClient.Clients;
 using TMStore.ApiClient.Models;
 
 namespace TMStore.ApiClient.Helpers
@@ -19,6 +20,17 @@ namespace TMStore.ApiClient.Helpers
             var decode = new JwtDecoder(serializer, urlEncode);
             var payload = decode.DecodeToObject<TokenPayload>(token);
             return DateTimeOffset.FromUnixTimeSeconds(payload.exp).LocalDateTime;
+        }
+
+        public static bool IsExpire()
+        {
+            return GetExpireTime() < DateTime.Now;
+        }
+
+        public static void RefreshToken()
+        {
+            var authClient = new AuthClient();
+            authClient.Login(ClientHelper.User, ClientHelper.Password);
         }
     }
 }
