@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace TMStore.ApiClient.Models
 {
@@ -12,5 +8,7 @@ namespace TMStore.ApiClient.Models
         public string note { get; set; }
         public string fromStoreCode { get; set; }
         public string toStoreCode { get; set; }
+        public string exportType { get; set; }
+        public List<ExportDetailModel> exportDetails { get; set; }
     }
 }

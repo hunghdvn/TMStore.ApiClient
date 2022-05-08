@@ -67,6 +67,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\TMStore.ApiClient.Models.ExportDetailModel.datasource" />
+    <None Include="Properties\DataSources\TMStore.ApiClient.Models.GoodsDeliveryNoteModel.datasource" />
     <None Include="Properties\DataSources\TMStore.ApiClient.Models.InventoryModel.datasource" />
     <None Include="Properties\DataSources\TMStore.ApiClient.Models.ProductItemModel.datasource" />
     <None Include="Properties\DataSources\TMStore.ApiClient.Models.ProductModel.datasource" />

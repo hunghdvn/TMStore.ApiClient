@@ -14,6 +14,7 @@ namespace TMStore.AppDemo
         private readonly IStoresClient storesClient;
         private readonly IProductClient productClient;
         private readonly IInventoryClient inventoryClient;
+        private readonly IGoodsDeliveryNoteClient goodsDeliveryNoteClient;
 
         public frmMain()
         {
@@ -22,6 +23,7 @@ namespace TMStore.AppDemo
             storesClient = new StoresClient();
             productClient = new ProductClient();
             inventoryClient = new InventoryClient();
+            goodsDeliveryNoteClient = new GoodsDeliveryNoteClient();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -240,6 +242,42 @@ namespace TMStore.AppDemo
                 var lstRfids = txtRfidXK.Text.Split('\n').ToList();
                 var result = inventoryClient.XuatKho(txtStoreCodeXK.Text.Trim(), txtStoreDestinationXK.Text.Trim(), txtNoteXK.Text.Trim(), txtGateXK.Text.Trim(), lstRfids);
                 MessageBox.Show("Đã xuất kho");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtStoreCodeGoods.Text.IsEmpty())
+                {
+                    MessageBox.Show("Chưa nhập StoreCode");
+                    return;
+                }
+                var result = goodsDeliveryNoteClient.GetListByStoreCode(txtStoreCodeGoods.Text.Trim());
+                bsGoodsMaster.DataSource = result;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    var selected = dataGridView1.SelectedRows[0].DataBoundItem as GoodsDeliveryNoteModel;
+                    if (selected == null)
+                        return;
+                    bsExportDetail.DataSource = selected.exportDetails;
+                }
             }
             catch (Exception ex)
             {

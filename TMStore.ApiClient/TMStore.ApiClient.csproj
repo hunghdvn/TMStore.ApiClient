@@ -53,6 +53,8 @@
     <Compile Include="Clients\Auth\AuthClient.cs" />
     <Compile Include="Clients\BaseResponse.cs" />
     <Compile Include="Clients\Auth\IAuthClient.cs" />
+    <Compile Include="Clients\GoodsDeliveryNote\GoodsDeliveryNoteClient.cs" />
+    <Compile Include="Clients\GoodsDeliveryNote\IGoodsDeliveryNoteClient.cs" />
     <Compile Include="Clients\Inventory\ExportRequest.cs" />
     <Compile Include="Clients\Inventory\ExportResult.cs" />
     <Compile Include="Clients\Inventory\IInventoryClient.cs" />
