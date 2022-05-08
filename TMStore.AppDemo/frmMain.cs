@@ -15,6 +15,7 @@ namespace TMStore.AppDemo
         private readonly IProductClient productClient;
         private readonly IInventoryClient inventoryClient;
         private readonly IGoodsDeliveryNoteClient goodsDeliveryNoteClient;
+        private readonly IInventoryAdjustmentClient inventoryAdjustmentClient;
 
         public frmMain()
         {
@@ -24,6 +25,7 @@ namespace TMStore.AppDemo
             productClient = new ProductClient();
             inventoryClient = new InventoryClient();
             goodsDeliveryNoteClient = new GoodsDeliveryNoteClient();
+            inventoryAdjustmentClient = new InventoryAdjustmentClient();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -277,6 +279,47 @@ namespace TMStore.AppDemo
                     if (selected == null)
                         return;
                     bsExportDetail.DataSource = selected.exportDetails;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtStoreCodeAdjustment.Text.IsEmpty())
+                {
+                    MessageBox.Show("Chưa nhập StoreCode");
+                    return;
+                }
+                var result = inventoryAdjustmentClient.GetListByStoreCode(txtStoreCodeAdjustment.Text.Trim());
+                bsAdjustment.DataSource = result;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void dataGridView5_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dataGridView5.SelectedRows.Count > 0)
+                {
+                    var selected = dataGridView5.SelectedRows[0].DataBoundItem as ProductOptionModel;
+                    if (selected == null)
+                        return;
+                    var lstChipCode = selected.chipCode;
+                    richTextBox1.Text = "";
+                    foreach (var chip in lstChipCode)
+                    {
+                        richTextBox1.Text += chip + "\r\n";
+                    }
                 }
             }
             catch (Exception ex)

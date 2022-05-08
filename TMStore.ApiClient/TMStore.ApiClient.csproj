@@ -55,6 +55,9 @@
     <Compile Include="Clients\Auth\IAuthClient.cs" />
     <Compile Include="Clients\GoodsDeliveryNote\GoodsDeliveryNoteClient.cs" />
     <Compile Include="Clients\GoodsDeliveryNote\IGoodsDeliveryNoteClient.cs" />
+    <Compile Include="Clients\InventoryAdjustment\IInventoryAdjustmentClient.cs" />
+    <Compile Include="Clients\InventoryAdjustment\InventoryAdjustmentClient.cs" />
+    <Compile Include="Clients\InventoryAdjustment\InventoryAdjustmentResponse.cs" />
     <Compile Include="Clients\Inventory\ExportRequest.cs" />
     <Compile Include="Clients\Inventory\ExportResult.cs" />
     <Compile Include="Clients\Inventory\IInventoryClient.cs" />
