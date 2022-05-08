@@ -16,6 +16,7 @@ namespace TMStore.AppDemo
         private readonly IInventoryClient inventoryClient;
         private readonly IGoodsDeliveryNoteClient goodsDeliveryNoteClient;
         private readonly IInventoryAdjustmentClient inventoryAdjustmentClient;
+        private readonly ITidClient tidClient;
 
         public frmMain()
         {
@@ -26,6 +27,7 @@ namespace TMStore.AppDemo
             inventoryClient = new InventoryClient();
             goodsDeliveryNoteClient = new GoodsDeliveryNoteClient();
             inventoryAdjustmentClient = new InventoryAdjustmentClient();
+            tidClient = new TidClient();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -319,6 +321,99 @@ namespace TMStore.AppDemo
                     foreach (var chip in lstChipCode)
                     {
                         richTextBox1.Text += chip + "\r\n";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckInputType();
+        }
+
+        private void CheckInputType()
+        {
+            if (radioButton1.Checked)
+            {
+                txtProductCodeTid.Text = "";
+                txtProductCodeTid.ReadOnly = true;
+                txtOptionIdTid.ReadOnly = false;
+                txtExternalTid.ReadOnly = false;
+            }
+            else
+            {
+                txtOptionIdTid.Text = "";
+                txtExternalTid.Text = "";
+                txtProductCodeTid.ReadOnly = false;
+                txtOptionIdTid.ReadOnly = true;
+                txtExternalTid.ReadOnly = true;
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtStoreCodeTid.Text.IsEmpty())
+                {
+                    MessageBox.Show("Chưa nhập StoreCode");
+                    return;
+                }
+                if (radioButton1.Checked)
+                {
+                    if (txtExternalTid.Text.IsEmpty() && txtOptionIdTid.Text.IsEmpty())
+                    {
+                        MessageBox.Show("Nhập ít nhất External hoặc optionid");
+                        return;
+                    }
+                }
+                else
+                {
+                    if (txtProductCodeTid.Text.IsEmpty())
+                    {
+                        MessageBox.Show("Thiếu product Code");
+                        return;
+                    }
+                }
+                var lstTid = new List<TidProductModel>();
+                if (radioButton1.Checked)
+                {
+                    var result = tidClient.GetTidByProductOption(txtExternalTid.Text.Trim(), int.Parse(txtOptionIdTid.Text.Trim()), txtStoreCodeTid.Text.Trim());
+                    if (result != null)
+                    {
+                        lstTid.Add(result);
+                    }
+                }
+                else
+                {
+                    lstTid = tidClient.GetTidByProduct(txtProductCodeTid.Text.Trim(), txtStoreCodeTid.Text.Trim());
+                }
+                bsTid.DataSource = lstTid;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void dataGridView6_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dataGridView6.SelectedRows.Count > 0)
+                {
+                    var selected = dataGridView6.SelectedRows[0].DataBoundItem as TidProductModel;
+                    if (selected == null)
+                        return;
+                    var lstRfid = selected.rfid;
+                    richTextBox2.Text = "";
+                    foreach (var rfid in lstRfid)
+                    {
+                        richTextBox2.Text += rfid + "\r\n";
                     }
                 }
             }

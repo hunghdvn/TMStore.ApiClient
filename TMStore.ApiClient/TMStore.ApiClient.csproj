@@ -53,6 +53,7 @@
     <Compile Include="Clients\Auth\AuthClient.cs" />
     <Compile Include="Clients\BaseResponse.cs" />
     <Compile Include="Clients\Auth\IAuthClient.cs" />
+    <Compile Include="Clients\Tid\GetTidByProductResponse.cs" />
     <Compile Include="Clients\GoodsDeliveryNote\GoodsDeliveryNoteClient.cs" />
     <Compile Include="Clients\GoodsDeliveryNote\IGoodsDeliveryNoteClient.cs" />
     <Compile Include="Clients\InventoryAdjustment\IInventoryAdjustmentClient.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="Clients\Inventory\ExportResult.cs" />
     <Compile Include="Clients\Inventory\IInventoryClient.cs" />
     <Compile Include="Clients\Inventory\InventoryClient.cs" />
+    <Compile Include="Clients\Tid\TidClient.cs" />
     <Compile Include="Clients\Tid\ITidClient.cs" />
     <Compile Include="Clients\Product\ProductOptionResponse.cs" />
     <Compile Include="Clients\Product\IProductClient.cs" />
@@ -83,6 +85,7 @@
     <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Models\ProductOptionModel.cs" />
     <Compile Include="Models\StoresModel.cs" />
+    <Compile Include="Models\TidProductModel.cs" />
     <Compile Include="Models\TokenPayload.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

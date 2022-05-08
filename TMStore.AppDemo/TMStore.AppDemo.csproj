@@ -57,6 +57,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -74,6 +75,7 @@
     <None Include="Properties\DataSources\TMStore.ApiClient.Models.ProductModel.datasource" />
     <None Include="Properties\DataSources\TMStore.ApiClient.Models.ProductOptionModel.datasource" />
     <None Include="Properties\DataSources\TMStore.ApiClient.Models.StoreModel.datasource" />
+    <None Include="Properties\DataSources\TMStore.ApiClient.Models.TidProductModel.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
