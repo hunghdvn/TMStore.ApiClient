@@ -260,7 +260,7 @@ namespace TMStore.AppDemo
                     MessageBox.Show("Chưa nhập StoreCode");
                     return;
                 }
-                var result = goodsDeliveryNoteClient.GetListByStoreCode(txtStoreCodeGoods.Text.Trim());
+                var result = goodsDeliveryNoteClient.GetListByStoreCode(txtStoreCodeGoods.Text.Trim(), 0);
                 bsGoodsMaster.DataSource = result;
             }
             catch (Exception ex)

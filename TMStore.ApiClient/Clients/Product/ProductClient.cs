@@ -9,7 +9,7 @@ namespace TMStore.ApiClient.Clients
         {
             try
             {
-                var result = ApiHelper.Get<ProductOptionResponse>($"api/ProductOption?page={page}&pageSize={pageSize}");
+                var result = ApiHelper.Get<ProductOptionResponse>($"api/ProductOption?sku={sku}&productId={productId}&optionId={optionId}&optionId2={optionId2}&page={page}&pageSize={pageSize}");
                 return result;
             }
             catch (Exception ex)

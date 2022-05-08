@@ -10,7 +10,7 @@ namespace TMStore.ApiClient.Clients
         /// </summary>
         /// <param name="storeCode"></param>
         /// <returns></returns>
-        List<GoodsDeliveryNoteModel> GetListByStoreCode(string storeCode);
+        List<GoodsDeliveryNoteModel> GetListByStoreCode(string storeCode, int storeId);
 
         /// <summary>
         /// Lấy thông tin phiếu xuất theo id

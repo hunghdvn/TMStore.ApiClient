@@ -19,11 +19,11 @@ namespace TMStore.ApiClient.Clients
             }
         }
 
-        public List<GoodsDeliveryNoteModel> GetListByStoreCode(string storeCode)
+        public List<GoodsDeliveryNoteModel> GetListByStoreCode(string storeCode, int storeId)
         {
             try
             {
-                return ApiHelper.Get<List<GoodsDeliveryNoteModel>>("api/GoodsDeliveryNote?storeCode=" + storeCode);
+                return ApiHelper.Get<List<GoodsDeliveryNoteModel>>($"api/GoodsDeliveryNote?storeCode={storeCode}&storeId={storeId}");
             }
             catch (Exception ex)
             {
