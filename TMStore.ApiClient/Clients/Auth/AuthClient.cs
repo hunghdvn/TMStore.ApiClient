@@ -8,7 +8,7 @@ namespace TMStore.ApiClient.Clients
 {
     public class AuthClient : IAuthClient
     {
-        private readonly RestClient client = ClientHelper.GetClient();
+        private readonly RestClient client = new RestClient();
 
         public bool Login(string email, string password)
         {

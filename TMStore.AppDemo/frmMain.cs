@@ -422,5 +422,132 @@ namespace TMStore.AppDemo
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtRfidConfirmExport.Text.IsEmpty())
+                {
+                    return;
+                }
+                if (txtInternalDeliveryId.Text.IsEmpty())
+                {
+                    return;
+                }
+                var lstTemp = txtRfidConfirmExport.Text.Split(',');
+                var lstRfid = lstTemp.Select(x => x.Trim()).ToList();
+                inventoryClient.XacNhanNhapKho(txtNoteConfirmExport.Text, int.Parse(txtInternalDeliveryId.Text.Trim()), lstRfid);
+                MessageBox.Show("Xác nhận thành công");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtStoreCodeProduct.Text.IsEmpty())
+                {
+                    return;
+                }
+                if (detailKiemKhoProduct.IsEmpty())
+                {
+                    MessageBox.Show("Chưa có chi tiết");
+                    return;
+                }
+                inventoryClient.TaoPhieuKiemKho(txtStoreCodeProduct.Text.Trim(), txtNoteProduct.Text, detailKiemKhoProduct);
+                MessageBox.Show("Gửi thành công");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        List<ProductOptionModel> detailKiemKhoProduct = new List<ProductOptionModel>();
+        List<ProductOptionModel> detailKiemKhoWare = new List<ProductOptionModel>();
+        private void button12_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtProductOptionIdConfirm.Text.IsEmpty())
+                {
+                    return;
+                }
+                if (txtChipCodeProduct.Text.IsEmpty())
+                {
+                    return;
+                }
+                var lstTemp = txtChipCodeProduct.Text.Split(',');
+                var lstRfid = lstTemp.Select(x => x.Trim()).ToList();
+                detailKiemKhoProduct.Add(new ProductOptionModel
+                {
+                    chipCode = lstRfid,
+                    productOptionId = int.Parse(txtProductOptionIdConfirm.Text.Trim()),
+                    sum = lstRfid.Count
+                });
+                bsCheckBalanceProduct.DataSource = detailKiemKhoProduct;
+                bsCheckBalanceProduct.ResetBindings(false);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtStoreCodeWare.Text.IsEmpty())
+                {
+                    return;
+                }
+                if (detailKiemKhoWare.IsEmpty())
+                {
+                    MessageBox.Show("Chưa có chi tiết");
+                    return;
+                }
+                inventoryClient.TaoPhieuKiemKho(txtStoreCodeWare.Text.Trim(), txtNoteCheckBalanceWare.Text, detailKiemKhoWare);
+                MessageBox.Show("Gửi thành công");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtProductOptionIdWare.Text.IsEmpty())
+                {
+                    return;
+                }
+                if (txtChipCodeWare.Text.IsEmpty())
+                {
+                    return;
+                }
+                var lstTemp = txtChipCodeWare.Text.Split(',');
+                var lstRfid = lstTemp.Select(x => x.Trim()).ToList();
+                detailKiemKhoWare.Add(new ProductOptionModel
+                {
+                    chipCode = lstRfid,
+                    productOptionId = int.Parse(txtProductOptionIdWare.Text.Trim()),
+                    sum = lstRfid.Count
+                });
+                bsCheckBalanceWare.DataSource = detailKiemKhoWare;
+                bsCheckBalanceWare.ResetBindings(false);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

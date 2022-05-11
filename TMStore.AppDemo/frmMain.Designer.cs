@@ -30,20 +30,20 @@ namespace TMStore.AppDemo
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Node1");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Node2");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Node3");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Node0", new System.Windows.Forms.TreeNode[] {
-            treeNode9,
-            treeNode10,
-            treeNode11});
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Node5");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Node6");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Node7");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Node4", new System.Windows.Forms.TreeNode[] {
-            treeNode13,
-            treeNode14,
-            treeNode15});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Node1");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Node2");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Node3");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Node0", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3});
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Node5");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Node6");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Node7");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Node4", new System.Windows.Forms.TreeNode[] {
+            treeNode5,
+            treeNode6,
+            treeNode7});
             this.label1 = new System.Windows.Forms.Label();
             this.txtBaseUrl = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,11 +54,23 @@ namespace TMStore.AppDemo
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.grvStores = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isHeadDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.keySearchDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isOnlineDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.codeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsStores = new System.Windows.Forms.BindingSource(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnLoadStore = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.productIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsProduct = new System.Windows.Forms.BindingSource(this.components);
             this.panel6 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -67,6 +79,12 @@ namespace TMStore.AppDemo
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.imageURLDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.externalSKUDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productOptionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsProductOption = new System.Windows.Forms.BindingSource(this.components);
             this.panel5 = new System.Windows.Forms.Panel();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.button2 = new System.Windows.Forms.Button();
@@ -101,63 +119,16 @@ namespace TMStore.AppDemo
             this.label4 = new System.Windows.Forms.Label();
             this.txtStoreDestinationXK = new System.Windows.Forms.TextBox();
             this.txtStoreCodeXK = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lbExpTime = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.label19 = new System.Windows.Forms.Label();
-            this.txtStoreCodeGoods = new System.Windows.Forms.TextBox();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label20 = new System.Windows.Forms.Label();
-            this.txtStoreCodeAdjustment = new System.Windows.Forms.TextBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.splitContainer3 = new System.Windows.Forms.SplitContainer();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
-            this.txtStoreCodeTid = new System.Windows.Forms.TextBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.txtExternalTid = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.txtOptionIdTid = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.txtProductCodeTid = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.splitContainer4 = new System.Windows.Forms.SplitContainer();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isHeadDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.keySearchDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isOnlineDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.codeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bsStores = new System.Windows.Forms.BindingSource(this.components);
-            this.productIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.codeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bsProduct = new System.Windows.Forms.BindingSource(this.components);
-            this.imageURLDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.externalSKUDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productOptionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bsProductOption = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.noteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fromStoreCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toStoreCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.exportTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bsGoodsMaster = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.goodsDeliveryNoteIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.inputPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -171,23 +142,95 @@ namespace TMStore.AppDemo
             this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productOptionNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bsExportDetail = new System.Windows.Forms.BindingSource(this.components);
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtStoreCodeGoods = new System.Windows.Forms.TextBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.splitContainer3 = new System.Windows.Forms.SplitContainer();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.imageURLDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.externalSKUDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sumDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productOptionIdDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bsAdjustment = new System.Windows.Forms.BindingSource(this.components);
-            this.bsMatHang = new System.Windows.Forms.BindingSource(this.components);
-            this.bsChungLoai = new System.Windows.Forms.BindingSource(this.components);
-            this.bsTid = new System.Windows.Forms.BindingSource(this.components);
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txtStoreCodeAdjustment = new System.Windows.Forms.TextBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.splitContainer4 = new System.Windows.Forms.SplitContainer();
+            this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.productOptionIDDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.externalSKUDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productCodeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productIdDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.bsTid = new System.Windows.Forms.BindingSource(this.components);
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtProductCodeTid = new System.Windows.Forms.TextBox();
+            this.txtOptionIdTid = new System.Windows.Forms.TextBox();
+            this.txtExternalTid = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txtStoreCodeTid = new System.Windows.Forms.TextBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dataGridView8 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsCheckBalanceWare = new System.Windows.Forms.BindingSource(this.components);
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.txtNoteCheckBalanceWare = new System.Windows.Forms.TextBox();
+            this.txtProductOptionIdWare = new System.Windows.Forms.TextBox();
+            this.txtStoreCodeWare = new System.Windows.Forms.TextBox();
+            this.txtChipCodeWare = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.sumDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productOptionIdDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsCheckBalanceProduct = new System.Windows.Forms.BindingSource(this.components);
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.txtNoteProduct = new System.Windows.Forms.TextBox();
+            this.txtProductOptionIdConfirm = new System.Windows.Forms.TextBox();
+            this.txtStoreCodeProduct = new System.Windows.Forms.TextBox();
+            this.txtChipCodeProduct = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button10 = new System.Windows.Forms.Button();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.txtNoteConfirmExport = new System.Windows.Forms.TextBox();
+            this.txtInternalDeliveryId = new System.Windows.Forms.TextBox();
+            this.txtRfidConfirmExport = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lbExpTime = new System.Windows.Forms.Label();
+            this.bsMatHang = new System.Windows.Forms.BindingSource(this.components);
+            this.bsChungLoai = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grvStores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsStores)).BeginInit();
             this.panel2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -195,46 +238,53 @@ namespace TMStore.AppDemo
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsProduct)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsProductOption)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsGoodsMaster)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsExportDetail)).BeginInit();
+            this.panel7.SuspendLayout();
             this.tabPage6.SuspendLayout();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
             this.splitContainer3.Panel1.SuspendLayout();
             this.splitContainer3.Panel2.SuspendLayout();
             this.splitContainer3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsAdjustment)).BeginInit();
+            this.panel8.SuspendLayout();
             this.tabPage7.SuspendLayout();
-            this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).BeginInit();
             this.splitContainer4.Panel1.SuspendLayout();
             this.splitContainer4.Panel2.SuspendLayout();
             this.splitContainer4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsStores)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsProduct)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsProductOption)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsGoodsMaster)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsExportDetail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsAdjustment)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsTid)).BeginInit();
+            this.panel9.SuspendLayout();
+            this.tabPage8.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsCheckBalanceWare)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsCheckBalanceProduct)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsMatHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsChungLoai)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsTid)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -307,6 +357,7 @@ namespace TMStore.AppDemo
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage7);
+            this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 44);
             this.tabControl1.Name = "tabControl1";
@@ -349,6 +400,59 @@ namespace TMStore.AppDemo
             this.grvStores.RowHeadersVisible = false;
             this.grvStores.Size = new System.Drawing.Size(1197, 573);
             this.grvStores.TabIndex = 0;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            this.addressDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // isHeadDataGridViewCheckBoxColumn
+            // 
+            this.isHeadDataGridViewCheckBoxColumn.DataPropertyName = "isHead";
+            this.isHeadDataGridViewCheckBoxColumn.HeaderText = "isHead";
+            this.isHeadDataGridViewCheckBoxColumn.Name = "isHeadDataGridViewCheckBoxColumn";
+            this.isHeadDataGridViewCheckBoxColumn.ReadOnly = true;
+            // 
+            // keySearchDataGridViewTextBoxColumn
+            // 
+            this.keySearchDataGridViewTextBoxColumn.DataPropertyName = "keySearch";
+            this.keySearchDataGridViewTextBoxColumn.HeaderText = "keySearch";
+            this.keySearchDataGridViewTextBoxColumn.Name = "keySearchDataGridViewTextBoxColumn";
+            this.keySearchDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // isOnlineDataGridViewCheckBoxColumn
+            // 
+            this.isOnlineDataGridViewCheckBoxColumn.DataPropertyName = "isOnline";
+            this.isOnlineDataGridViewCheckBoxColumn.HeaderText = "isOnline";
+            this.isOnlineDataGridViewCheckBoxColumn.Name = "isOnlineDataGridViewCheckBoxColumn";
+            this.isOnlineDataGridViewCheckBoxColumn.ReadOnly = true;
+            // 
+            // codeDataGridViewTextBoxColumn
+            // 
+            this.codeDataGridViewTextBoxColumn.DataPropertyName = "code";
+            this.codeDataGridViewTextBoxColumn.HeaderText = "code";
+            this.codeDataGridViewTextBoxColumn.Name = "codeDataGridViewTextBoxColumn";
+            this.codeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // bsStores
+            // 
+            this.bsStores.DataSource = typeof(TMStore.ApiClient.Models.StoresModel);
             // 
             // panel2
             // 
@@ -421,6 +525,31 @@ namespace TMStore.AppDemo
             this.dataGridView3.Size = new System.Drawing.Size(588, 511);
             this.dataGridView3.TabIndex = 0;
             this.dataGridView3.SelectionChanged += new System.EventHandler(this.dataGridView3_SelectionChanged);
+            // 
+            // productIdDataGridViewTextBoxColumn
+            // 
+            this.productIdDataGridViewTextBoxColumn.DataPropertyName = "productId";
+            this.productIdDataGridViewTextBoxColumn.HeaderText = "productId";
+            this.productIdDataGridViewTextBoxColumn.Name = "productIdDataGridViewTextBoxColumn";
+            this.productIdDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nameDataGridViewTextBoxColumn1
+            // 
+            this.nameDataGridViewTextBoxColumn1.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn1.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn1.Name = "nameDataGridViewTextBoxColumn1";
+            this.nameDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // codeDataGridViewTextBoxColumn1
+            // 
+            this.codeDataGridViewTextBoxColumn1.DataPropertyName = "code";
+            this.codeDataGridViewTextBoxColumn1.HeaderText = "code";
+            this.codeDataGridViewTextBoxColumn1.Name = "codeDataGridViewTextBoxColumn1";
+            this.codeDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // bsProduct
+            // 
+            this.bsProduct.DataSource = typeof(TMStore.ApiClient.Models.ProductItemModel);
             // 
             // panel6
             // 
@@ -514,6 +643,45 @@ namespace TMStore.AppDemo
             this.dataGridView4.Size = new System.Drawing.Size(605, 567);
             this.dataGridView4.TabIndex = 0;
             // 
+            // imageURLDataGridViewTextBoxColumn
+            // 
+            this.imageURLDataGridViewTextBoxColumn.DataPropertyName = "imageURL";
+            this.imageURLDataGridViewTextBoxColumn.HeaderText = "imageURL";
+            this.imageURLDataGridViewTextBoxColumn.Name = "imageURLDataGridViewTextBoxColumn";
+            this.imageURLDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // externalSKUDataGridViewTextBoxColumn
+            // 
+            this.externalSKUDataGridViewTextBoxColumn.DataPropertyName = "externalSKU";
+            this.externalSKUDataGridViewTextBoxColumn.HeaderText = "externalSKU";
+            this.externalSKUDataGridViewTextBoxColumn.Name = "externalSKUDataGridViewTextBoxColumn";
+            this.externalSKUDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sumDataGridViewTextBoxColumn
+            // 
+            this.sumDataGridViewTextBoxColumn.DataPropertyName = "sum";
+            this.sumDataGridViewTextBoxColumn.HeaderText = "sum";
+            this.sumDataGridViewTextBoxColumn.Name = "sumDataGridViewTextBoxColumn";
+            this.sumDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productOptionIDDataGridViewTextBoxColumn
+            // 
+            this.productOptionIDDataGridViewTextBoxColumn.DataPropertyName = "productOptionId";
+            this.productOptionIDDataGridViewTextBoxColumn.HeaderText = "productOptionId";
+            this.productOptionIDDataGridViewTextBoxColumn.Name = "productOptionIDDataGridViewTextBoxColumn";
+            this.productOptionIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nameDataGridViewTextBoxColumn2
+            // 
+            this.nameDataGridViewTextBoxColumn2.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn2.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn2.Name = "nameDataGridViewTextBoxColumn2";
+            this.nameDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // bsProductOption
+            // 
+            this.bsProductOption.DataSource = typeof(TMStore.ApiClient.Models.ProductOptionModel);
+            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.numericUpDown1);
@@ -575,25 +743,25 @@ namespace TMStore.AppDemo
             this.tvNhapKho.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tvNhapKho.Location = new System.Drawing.Point(3, 205);
             this.tvNhapKho.Name = "tvNhapKho";
-            treeNode9.Name = "Node1";
-            treeNode9.Text = "Node1";
-            treeNode10.Name = "Node2";
-            treeNode10.Text = "Node2";
-            treeNode11.Name = "Node3";
-            treeNode11.Text = "Node3";
-            treeNode12.Name = "Node0";
-            treeNode12.Text = "Node0";
-            treeNode13.Name = "Node5";
-            treeNode13.Text = "Node5";
-            treeNode14.Name = "Node6";
-            treeNode14.Text = "Node6";
-            treeNode15.Name = "Node7";
-            treeNode15.Text = "Node7";
-            treeNode16.Name = "Node4";
-            treeNode16.Text = "Node4";
+            treeNode1.Name = "Node1";
+            treeNode1.Text = "Node1";
+            treeNode2.Name = "Node2";
+            treeNode2.Text = "Node2";
+            treeNode3.Name = "Node3";
+            treeNode3.Text = "Node3";
+            treeNode4.Name = "Node0";
+            treeNode4.Text = "Node0";
+            treeNode5.Name = "Node5";
+            treeNode5.Text = "Node5";
+            treeNode6.Name = "Node6";
+            treeNode6.Text = "Node6";
+            treeNode7.Name = "Node7";
+            treeNode7.Text = "Node7";
+            treeNode8.Name = "Node4";
+            treeNode8.Text = "Node4";
             this.tvNhapKho.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode12,
-            treeNode16});
+            treeNode4,
+            treeNode8});
             this.tvNhapKho.Size = new System.Drawing.Size(1197, 421);
             this.tvNhapKho.TabIndex = 5;
             // 
@@ -859,41 +1027,6 @@ namespace TMStore.AppDemo
             this.txtStoreCodeXK.Size = new System.Drawing.Size(170, 20);
             this.txtStoreCodeXK.TabIndex = 12;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.lbExpTime);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.txtBaseUrl);
-            this.panel1.Controls.Add(this.btnLogin);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.txtPassword);
-            this.panel1.Controls.Add(this.txtEmail);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1211, 44);
-            this.panel1.TabIndex = 4;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(794, 15);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 13);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Expire time";
-            // 
-            // lbExpTime
-            // 
-            this.lbExpTime.AutoSize = true;
-            this.lbExpTime.Location = new System.Drawing.Point(858, 15);
-            this.lbExpTime.Name = "lbExpTime";
-            this.lbExpTime.Size = new System.Drawing.Size(10, 13);
-            this.lbExpTime.TabIndex = 0;
-            this.lbExpTime.Text = ".";
-            // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.splitContainer2);
@@ -906,26 +1039,23 @@ namespace TMStore.AppDemo
             this.tabPage5.Text = "Tìm kiếm phiếu xuất kho";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // panel7
+            // splitContainer2
             // 
-            this.panel7.Controls.Add(this.label19);
-            this.panel7.Controls.Add(this.txtStoreCodeGoods);
-            this.panel7.Controls.Add(this.button7);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(3, 3);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1197, 50);
-            this.panel7.TabIndex = 2;
+            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer2.Location = new System.Drawing.Point(3, 53);
+            this.splitContainer2.Name = "splitContainer2";
+            this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // button7
+            // splitContainer2.Panel1
             // 
-            this.button7.Location = new System.Drawing.Point(328, 14);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(136, 23);
-            this.button7.TabIndex = 0;
-            this.button7.Text = "Tìm phiếu xuất kho";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.splitContainer2.Panel1.Controls.Add(this.dataGridView1);
+            // 
+            // splitContainer2.Panel2
+            // 
+            this.splitContainer2.Panel2.Controls.Add(this.dataGridView2);
+            this.splitContainer2.Size = new System.Drawing.Size(1197, 573);
+            this.splitContainer2.SplitterDistance = 206;
+            this.splitContainer2.TabIndex = 4;
             // 
             // dataGridView1
             // 
@@ -950,441 +1080,6 @@ namespace TMStore.AppDemo
             this.dataGridView1.Size = new System.Drawing.Size(1197, 206);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
-            // 
-            // splitContainer2
-            // 
-            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer2.Location = new System.Drawing.Point(3, 53);
-            this.splitContainer2.Name = "splitContainer2";
-            this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer2.Panel1
-            // 
-            this.splitContainer2.Panel1.Controls.Add(this.dataGridView1);
-            // 
-            // splitContainer2.Panel2
-            // 
-            this.splitContainer2.Panel2.Controls.Add(this.dataGridView2);
-            this.splitContainer2.Size = new System.Drawing.Size(1197, 573);
-            this.splitContainer2.SplitterDistance = 206;
-            this.splitContainer2.TabIndex = 4;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn2,
-            this.goodsDeliveryNoteIdDataGridViewTextBoxColumn,
-            this.inputPriceDataGridViewTextBoxColumn,
-            this.quantityDataGridViewTextBoxColumn,
-            this.productOptionIdDataGridViewTextBoxColumn1,
-            this.barcodeDataGridViewTextBoxColumn,
-            this.receiveQuantityDataGridViewTextBoxColumn,
-            this.salePriceDataGridViewTextBoxColumn,
-            this.productCodeDataGridViewTextBoxColumn,
-            this.productIdDataGridViewTextBoxColumn1,
-            this.productNameDataGridViewTextBoxColumn,
-            this.productOptionNameDataGridViewTextBoxColumn});
-            this.dataGridView2.DataSource = this.bsExportDetail;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.RowHeadersVisible = false;
-            this.dataGridView2.Size = new System.Drawing.Size(1197, 363);
-            this.dataGridView2.TabIndex = 0;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(28, 19);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(57, 13);
-            this.label19.TabIndex = 11;
-            this.label19.Text = "StoreCode";
-            // 
-            // txtStoreCodeGoods
-            // 
-            this.txtStoreCodeGoods.Location = new System.Drawing.Point(135, 16);
-            this.txtStoreCodeGoods.Name = "txtStoreCodeGoods";
-            this.txtStoreCodeGoods.Size = new System.Drawing.Size(170, 20);
-            this.txtStoreCodeGoods.TabIndex = 12;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.splitContainer3);
-            this.tabPage6.Controls.Add(this.panel8);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1203, 629);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "InventoryAdjustment";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.label20);
-            this.panel8.Controls.Add(this.txtStoreCodeAdjustment);
-            this.panel8.Controls.Add(this.button8);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(3, 3);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1197, 50);
-            this.panel8.TabIndex = 3;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(28, 19);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(57, 13);
-            this.label20.TabIndex = 11;
-            this.label20.Text = "StoreCode";
-            // 
-            // txtStoreCodeAdjustment
-            // 
-            this.txtStoreCodeAdjustment.Location = new System.Drawing.Point(135, 16);
-            this.txtStoreCodeAdjustment.Name = "txtStoreCodeAdjustment";
-            this.txtStoreCodeAdjustment.Size = new System.Drawing.Size(170, 20);
-            this.txtStoreCodeAdjustment.TabIndex = 12;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(328, 14);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(136, 23);
-            this.button8.TabIndex = 0;
-            this.button8.Text = "Tìm sản phẩm trong kho";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // dataGridView5
-            // 
-            this.dataGridView5.AllowUserToAddRows = false;
-            this.dataGridView5.AllowUserToDeleteRows = false;
-            this.dataGridView5.AllowUserToResizeRows = false;
-            this.dataGridView5.AutoGenerateColumns = false;
-            this.dataGridView5.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.imageURLDataGridViewTextBoxColumn1,
-            this.externalSKUDataGridViewTextBoxColumn1,
-            this.sumDataGridViewTextBoxColumn1,
-            this.productOptionIdDataGridViewTextBoxColumn2});
-            this.dataGridView5.DataSource = this.bsAdjustment;
-            this.dataGridView5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView5.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.ReadOnly = true;
-            this.dataGridView5.RowHeadersVisible = false;
-            this.dataGridView5.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView5.Size = new System.Drawing.Size(956, 573);
-            this.dataGridView5.TabIndex = 4;
-            this.dataGridView5.SelectionChanged += new System.EventHandler(this.dataGridView5_SelectionChanged);
-            // 
-            // splitContainer3
-            // 
-            this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer3.Location = new System.Drawing.Point(3, 53);
-            this.splitContainer3.Name = "splitContainer3";
-            // 
-            // splitContainer3.Panel1
-            // 
-            this.splitContainer3.Panel1.Controls.Add(this.dataGridView5);
-            // 
-            // splitContainer3.Panel2
-            // 
-            this.splitContainer3.Panel2.Controls.Add(this.richTextBox1);
-            this.splitContainer3.Size = new System.Drawing.Size(1197, 573);
-            this.splitContainer3.SplitterDistance = 956;
-            this.splitContainer3.TabIndex = 5;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(237, 573);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.splitContainer4);
-            this.tabPage7.Controls.Add(this.panel9);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1203, 629);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "Tid";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.radioButton2);
-            this.panel9.Controls.Add(this.radioButton1);
-            this.panel9.Controls.Add(this.label24);
-            this.panel9.Controls.Add(this.label23);
-            this.panel9.Controls.Add(this.label22);
-            this.panel9.Controls.Add(this.txtProductCodeTid);
-            this.panel9.Controls.Add(this.txtOptionIdTid);
-            this.panel9.Controls.Add(this.txtExternalTid);
-            this.panel9.Controls.Add(this.label21);
-            this.panel9.Controls.Add(this.txtStoreCodeTid);
-            this.panel9.Controls.Add(this.button9);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(3, 3);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1197, 82);
-            this.panel9.TabIndex = 4;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(20, 19);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(57, 13);
-            this.label21.TabIndex = 11;
-            this.label21.Text = "StoreCode";
-            // 
-            // txtStoreCodeTid
-            // 
-            this.txtStoreCodeTid.Location = new System.Drawing.Point(127, 16);
-            this.txtStoreCodeTid.Name = "txtStoreCodeTid";
-            this.txtStoreCodeTid.Size = new System.Drawing.Size(170, 20);
-            this.txtStoreCodeTid.TabIndex = 12;
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(996, 40);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(136, 23);
-            this.button9.TabIndex = 0;
-            this.button9.Text = "Tìm sản phẩm trong kho";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // txtExternalTid
-            // 
-            this.txtExternalTid.Location = new System.Drawing.Point(127, 42);
-            this.txtExternalTid.Name = "txtExternalTid";
-            this.txtExternalTid.Size = new System.Drawing.Size(170, 20);
-            this.txtExternalTid.TabIndex = 12;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(20, 45);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(64, 13);
-            this.label22.TabIndex = 11;
-            this.label22.Text = "ExternalSku";
-            // 
-            // txtOptionIdTid
-            // 
-            this.txtOptionIdTid.Location = new System.Drawing.Point(418, 42);
-            this.txtOptionIdTid.Name = "txtOptionIdTid";
-            this.txtOptionIdTid.Size = new System.Drawing.Size(170, 20);
-            this.txtOptionIdTid.TabIndex = 12;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(311, 45);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(86, 13);
-            this.label23.TabIndex = 11;
-            this.label23.Text = "product option id";
-            // 
-            // txtProductCodeTid
-            // 
-            this.txtProductCodeTid.Location = new System.Drawing.Point(731, 42);
-            this.txtProductCodeTid.Name = "txtProductCodeTid";
-            this.txtProductCodeTid.ReadOnly = true;
-            this.txtProductCodeTid.Size = new System.Drawing.Size(170, 20);
-            this.txtProductCodeTid.TabIndex = 12;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(624, 45);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(72, 13);
-            this.label24.TabIndex = 11;
-            this.label24.Text = "Product Code";
-            // 
-            // splitContainer4
-            // 
-            this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer4.Location = new System.Drawing.Point(3, 85);
-            this.splitContainer4.Name = "splitContainer4";
-            // 
-            // splitContainer4.Panel1
-            // 
-            this.splitContainer4.Panel1.Controls.Add(this.dataGridView6);
-            // 
-            // splitContainer4.Panel2
-            // 
-            this.splitContainer4.Panel2.Controls.Add(this.richTextBox2);
-            this.splitContainer4.Size = new System.Drawing.Size(1197, 541);
-            this.splitContainer4.SplitterDistance = 956;
-            this.splitContainer4.TabIndex = 6;
-            // 
-            // dataGridView6
-            // 
-            this.dataGridView6.AllowUserToAddRows = false;
-            this.dataGridView6.AllowUserToDeleteRows = false;
-            this.dataGridView6.AllowUserToResizeRows = false;
-            this.dataGridView6.AutoGenerateColumns = false;
-            this.dataGridView6.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.productOptionIDDataGridViewTextBoxColumn3,
-            this.externalSKUDataGridViewTextBoxColumn2,
-            this.productCodeDataGridViewTextBoxColumn1,
-            this.productIdDataGridViewTextBoxColumn2});
-            this.dataGridView6.DataSource = this.bsTid;
-            this.dataGridView6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView6.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.ReadOnly = true;
-            this.dataGridView6.RowHeadersVisible = false;
-            this.dataGridView6.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView6.Size = new System.Drawing.Size(956, 541);
-            this.dataGridView6.TabIndex = 4;
-            this.dataGridView6.SelectionChanged += new System.EventHandler(this.dataGridView6_SelectionChanged);
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox2.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(237, 541);
-            this.richTextBox2.TabIndex = 0;
-            this.richTextBox2.Text = "";
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // addressDataGridViewTextBoxColumn
-            // 
-            this.addressDataGridViewTextBoxColumn.DataPropertyName = "address";
-            this.addressDataGridViewTextBoxColumn.HeaderText = "address";
-            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            this.addressDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // isHeadDataGridViewCheckBoxColumn
-            // 
-            this.isHeadDataGridViewCheckBoxColumn.DataPropertyName = "isHead";
-            this.isHeadDataGridViewCheckBoxColumn.HeaderText = "isHead";
-            this.isHeadDataGridViewCheckBoxColumn.Name = "isHeadDataGridViewCheckBoxColumn";
-            this.isHeadDataGridViewCheckBoxColumn.ReadOnly = true;
-            // 
-            // keySearchDataGridViewTextBoxColumn
-            // 
-            this.keySearchDataGridViewTextBoxColumn.DataPropertyName = "keySearch";
-            this.keySearchDataGridViewTextBoxColumn.HeaderText = "keySearch";
-            this.keySearchDataGridViewTextBoxColumn.Name = "keySearchDataGridViewTextBoxColumn";
-            this.keySearchDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // isOnlineDataGridViewCheckBoxColumn
-            // 
-            this.isOnlineDataGridViewCheckBoxColumn.DataPropertyName = "isOnline";
-            this.isOnlineDataGridViewCheckBoxColumn.HeaderText = "isOnline";
-            this.isOnlineDataGridViewCheckBoxColumn.Name = "isOnlineDataGridViewCheckBoxColumn";
-            this.isOnlineDataGridViewCheckBoxColumn.ReadOnly = true;
-            // 
-            // codeDataGridViewTextBoxColumn
-            // 
-            this.codeDataGridViewTextBoxColumn.DataPropertyName = "code";
-            this.codeDataGridViewTextBoxColumn.HeaderText = "code";
-            this.codeDataGridViewTextBoxColumn.Name = "codeDataGridViewTextBoxColumn";
-            this.codeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // bsStores
-            // 
-            this.bsStores.DataSource = typeof(TMStore.ApiClient.Models.StoresModel);
-            // 
-            // productIdDataGridViewTextBoxColumn
-            // 
-            this.productIdDataGridViewTextBoxColumn.DataPropertyName = "productId";
-            this.productIdDataGridViewTextBoxColumn.HeaderText = "productId";
-            this.productIdDataGridViewTextBoxColumn.Name = "productIdDataGridViewTextBoxColumn";
-            this.productIdDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nameDataGridViewTextBoxColumn1
-            // 
-            this.nameDataGridViewTextBoxColumn1.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn1.HeaderText = "name";
-            this.nameDataGridViewTextBoxColumn1.Name = "nameDataGridViewTextBoxColumn1";
-            this.nameDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // codeDataGridViewTextBoxColumn1
-            // 
-            this.codeDataGridViewTextBoxColumn1.DataPropertyName = "code";
-            this.codeDataGridViewTextBoxColumn1.HeaderText = "code";
-            this.codeDataGridViewTextBoxColumn1.Name = "codeDataGridViewTextBoxColumn1";
-            this.codeDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // bsProduct
-            // 
-            this.bsProduct.DataSource = typeof(TMStore.ApiClient.Models.ProductItemModel);
-            // 
-            // imageURLDataGridViewTextBoxColumn
-            // 
-            this.imageURLDataGridViewTextBoxColumn.DataPropertyName = "imageURL";
-            this.imageURLDataGridViewTextBoxColumn.HeaderText = "imageURL";
-            this.imageURLDataGridViewTextBoxColumn.Name = "imageURLDataGridViewTextBoxColumn";
-            this.imageURLDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // externalSKUDataGridViewTextBoxColumn
-            // 
-            this.externalSKUDataGridViewTextBoxColumn.DataPropertyName = "externalSKU";
-            this.externalSKUDataGridViewTextBoxColumn.HeaderText = "externalSKU";
-            this.externalSKUDataGridViewTextBoxColumn.Name = "externalSKUDataGridViewTextBoxColumn";
-            this.externalSKUDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // sumDataGridViewTextBoxColumn
-            // 
-            this.sumDataGridViewTextBoxColumn.DataPropertyName = "sum";
-            this.sumDataGridViewTextBoxColumn.HeaderText = "sum";
-            this.sumDataGridViewTextBoxColumn.Name = "sumDataGridViewTextBoxColumn";
-            this.sumDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productOptionIDDataGridViewTextBoxColumn
-            // 
-            this.productOptionIDDataGridViewTextBoxColumn.DataPropertyName = "productOptionId";
-            this.productOptionIDDataGridViewTextBoxColumn.HeaderText = "productOptionId";
-            this.productOptionIDDataGridViewTextBoxColumn.Name = "productOptionIDDataGridViewTextBoxColumn";
-            this.productOptionIDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nameDataGridViewTextBoxColumn2
-            // 
-            this.nameDataGridViewTextBoxColumn2.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn2.HeaderText = "name";
-            this.nameDataGridViewTextBoxColumn2.Name = "nameDataGridViewTextBoxColumn2";
-            this.nameDataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // bsProductOption
-            // 
-            this.bsProductOption.DataSource = typeof(TMStore.ApiClient.Models.ProductOptionModel);
             // 
             // idDataGridViewTextBoxColumn1
             // 
@@ -1424,6 +1119,35 @@ namespace TMStore.AppDemo
             // bsGoodsMaster
             // 
             this.bsGoodsMaster.DataSource = typeof(TMStore.ApiClient.Models.GoodsDeliveryNoteModel);
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn2,
+            this.goodsDeliveryNoteIdDataGridViewTextBoxColumn,
+            this.inputPriceDataGridViewTextBoxColumn,
+            this.quantityDataGridViewTextBoxColumn,
+            this.productOptionIdDataGridViewTextBoxColumn1,
+            this.barcodeDataGridViewTextBoxColumn,
+            this.receiveQuantityDataGridViewTextBoxColumn,
+            this.salePriceDataGridViewTextBoxColumn,
+            this.productCodeDataGridViewTextBoxColumn,
+            this.productIdDataGridViewTextBoxColumn1,
+            this.productNameDataGridViewTextBoxColumn,
+            this.productOptionNameDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.bsExportDetail;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowHeadersVisible = false;
+            this.dataGridView2.Size = new System.Drawing.Size(1197, 363);
+            this.dataGridView2.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn2
             // 
@@ -1513,6 +1237,96 @@ namespace TMStore.AppDemo
             // 
             this.bsExportDetail.DataSource = typeof(TMStore.ApiClient.Models.ExportDetailModel);
             // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.label19);
+            this.panel7.Controls.Add(this.txtStoreCodeGoods);
+            this.panel7.Controls.Add(this.button7);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(3, 3);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1197, 50);
+            this.panel7.TabIndex = 2;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(28, 19);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(57, 13);
+            this.label19.TabIndex = 11;
+            this.label19.Text = "StoreCode";
+            // 
+            // txtStoreCodeGoods
+            // 
+            this.txtStoreCodeGoods.Location = new System.Drawing.Point(135, 16);
+            this.txtStoreCodeGoods.Name = "txtStoreCodeGoods";
+            this.txtStoreCodeGoods.Size = new System.Drawing.Size(170, 20);
+            this.txtStoreCodeGoods.TabIndex = 12;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(328, 14);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(136, 23);
+            this.button7.TabIndex = 0;
+            this.button7.Text = "Tìm phiếu xuất kho";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.splitContainer3);
+            this.tabPage6.Controls.Add(this.panel8);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1203, 629);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "InventoryAdjustment";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // splitContainer3
+            // 
+            this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer3.Location = new System.Drawing.Point(3, 53);
+            this.splitContainer3.Name = "splitContainer3";
+            // 
+            // splitContainer3.Panel1
+            // 
+            this.splitContainer3.Panel1.Controls.Add(this.dataGridView5);
+            // 
+            // splitContainer3.Panel2
+            // 
+            this.splitContainer3.Panel2.Controls.Add(this.richTextBox1);
+            this.splitContainer3.Size = new System.Drawing.Size(1197, 573);
+            this.splitContainer3.SplitterDistance = 956;
+            this.splitContainer3.TabIndex = 5;
+            // 
+            // dataGridView5
+            // 
+            this.dataGridView5.AllowUserToAddRows = false;
+            this.dataGridView5.AllowUserToDeleteRows = false;
+            this.dataGridView5.AllowUserToResizeRows = false;
+            this.dataGridView5.AutoGenerateColumns = false;
+            this.dataGridView5.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.imageURLDataGridViewTextBoxColumn1,
+            this.externalSKUDataGridViewTextBoxColumn1,
+            this.sumDataGridViewTextBoxColumn1,
+            this.productOptionIdDataGridViewTextBoxColumn2});
+            this.dataGridView5.DataSource = this.bsAdjustment;
+            this.dataGridView5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView5.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.ReadOnly = true;
+            this.dataGridView5.RowHeadersVisible = false;
+            this.dataGridView5.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView5.Size = new System.Drawing.Size(956, 573);
+            this.dataGridView5.TabIndex = 4;
+            this.dataGridView5.SelectionChanged += new System.EventHandler(this.dataGridView5_SelectionChanged);
+            // 
             // imageURLDataGridViewTextBoxColumn1
             // 
             this.imageURLDataGridViewTextBoxColumn1.DataPropertyName = "imageURL";
@@ -1545,17 +1359,104 @@ namespace TMStore.AppDemo
             // 
             this.bsAdjustment.DataSource = typeof(TMStore.ApiClient.Models.ProductOptionModel);
             // 
-            // bsMatHang
+            // richTextBox1
             // 
-            this.bsMatHang.DataSource = typeof(TMStore.ApiClient.Models.ProductItemModel);
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(237, 573);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
             // 
-            // bsChungLoai
+            // panel8
             // 
-            this.bsChungLoai.DataSource = typeof(TMStore.ApiClient.Models.ProductOptionModel);
+            this.panel8.Controls.Add(this.label20);
+            this.panel8.Controls.Add(this.txtStoreCodeAdjustment);
+            this.panel8.Controls.Add(this.button8);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(3, 3);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1197, 50);
+            this.panel8.TabIndex = 3;
             // 
-            // bsTid
+            // label20
             // 
-            this.bsTid.DataSource = typeof(TMStore.ApiClient.Models.TidProductModel);
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(28, 19);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(57, 13);
+            this.label20.TabIndex = 11;
+            this.label20.Text = "StoreCode";
+            // 
+            // txtStoreCodeAdjustment
+            // 
+            this.txtStoreCodeAdjustment.Location = new System.Drawing.Point(135, 16);
+            this.txtStoreCodeAdjustment.Name = "txtStoreCodeAdjustment";
+            this.txtStoreCodeAdjustment.Size = new System.Drawing.Size(170, 20);
+            this.txtStoreCodeAdjustment.TabIndex = 12;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(328, 14);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(136, 23);
+            this.button8.TabIndex = 0;
+            this.button8.Text = "Tìm sản phẩm trong kho";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.splitContainer4);
+            this.tabPage7.Controls.Add(this.panel9);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(1203, 629);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Tid";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // splitContainer4
+            // 
+            this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer4.Location = new System.Drawing.Point(3, 85);
+            this.splitContainer4.Name = "splitContainer4";
+            // 
+            // splitContainer4.Panel1
+            // 
+            this.splitContainer4.Panel1.Controls.Add(this.dataGridView6);
+            // 
+            // splitContainer4.Panel2
+            // 
+            this.splitContainer4.Panel2.Controls.Add(this.richTextBox2);
+            this.splitContainer4.Size = new System.Drawing.Size(1197, 541);
+            this.splitContainer4.SplitterDistance = 956;
+            this.splitContainer4.TabIndex = 6;
+            // 
+            // dataGridView6
+            // 
+            this.dataGridView6.AllowUserToAddRows = false;
+            this.dataGridView6.AllowUserToDeleteRows = false;
+            this.dataGridView6.AllowUserToResizeRows = false;
+            this.dataGridView6.AutoGenerateColumns = false;
+            this.dataGridView6.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.productOptionIDDataGridViewTextBoxColumn3,
+            this.externalSKUDataGridViewTextBoxColumn2,
+            this.productCodeDataGridViewTextBoxColumn1,
+            this.productIdDataGridViewTextBoxColumn2});
+            this.dataGridView6.DataSource = this.bsTid;
+            this.dataGridView6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView6.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView6.Name = "dataGridView6";
+            this.dataGridView6.ReadOnly = true;
+            this.dataGridView6.RowHeadersVisible = false;
+            this.dataGridView6.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView6.Size = new System.Drawing.Size(956, 541);
+            this.dataGridView6.TabIndex = 4;
+            this.dataGridView6.SelectionChanged += new System.EventHandler(this.dataGridView6_SelectionChanged);
             // 
             // productOptionIDDataGridViewTextBoxColumn3
             // 
@@ -1585,6 +1486,48 @@ namespace TMStore.AppDemo
             this.productIdDataGridViewTextBoxColumn2.Name = "productIdDataGridViewTextBoxColumn2";
             this.productIdDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
+            // bsTid
+            // 
+            this.bsTid.DataSource = typeof(TMStore.ApiClient.Models.TidProductModel);
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox2.Location = new System.Drawing.Point(0, 0);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(237, 541);
+            this.richTextBox2.TabIndex = 0;
+            this.richTextBox2.Text = "";
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.radioButton2);
+            this.panel9.Controls.Add(this.radioButton1);
+            this.panel9.Controls.Add(this.label24);
+            this.panel9.Controls.Add(this.label23);
+            this.panel9.Controls.Add(this.label22);
+            this.panel9.Controls.Add(this.txtProductCodeTid);
+            this.panel9.Controls.Add(this.txtOptionIdTid);
+            this.panel9.Controls.Add(this.txtExternalTid);
+            this.panel9.Controls.Add(this.label21);
+            this.panel9.Controls.Add(this.txtStoreCodeTid);
+            this.panel9.Controls.Add(this.button9);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(3, 3);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1197, 82);
+            this.panel9.TabIndex = 4;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(611, 19);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(106, 17);
+            this.radioButton2.TabIndex = 13;
+            this.radioButton2.Text = "GetTidByProduct";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
@@ -1598,15 +1541,529 @@ namespace TMStore.AppDemo
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // radioButton2
+            // label24
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(611, 19);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(106, 17);
-            this.radioButton2.TabIndex = 13;
-            this.radioButton2.Text = "GetTidByProduct";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(624, 45);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(72, 13);
+            this.label24.TabIndex = 11;
+            this.label24.Text = "Product Code";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(311, 45);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(86, 13);
+            this.label23.TabIndex = 11;
+            this.label23.Text = "product option id";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(20, 45);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(64, 13);
+            this.label22.TabIndex = 11;
+            this.label22.Text = "ExternalSku";
+            // 
+            // txtProductCodeTid
+            // 
+            this.txtProductCodeTid.Location = new System.Drawing.Point(731, 42);
+            this.txtProductCodeTid.Name = "txtProductCodeTid";
+            this.txtProductCodeTid.ReadOnly = true;
+            this.txtProductCodeTid.Size = new System.Drawing.Size(170, 20);
+            this.txtProductCodeTid.TabIndex = 12;
+            // 
+            // txtOptionIdTid
+            // 
+            this.txtOptionIdTid.Location = new System.Drawing.Point(418, 42);
+            this.txtOptionIdTid.Name = "txtOptionIdTid";
+            this.txtOptionIdTid.Size = new System.Drawing.Size(170, 20);
+            this.txtOptionIdTid.TabIndex = 12;
+            // 
+            // txtExternalTid
+            // 
+            this.txtExternalTid.Location = new System.Drawing.Point(127, 42);
+            this.txtExternalTid.Name = "txtExternalTid";
+            this.txtExternalTid.Size = new System.Drawing.Size(170, 20);
+            this.txtExternalTid.TabIndex = 12;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(20, 19);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(57, 13);
+            this.label21.TabIndex = 11;
+            this.label21.Text = "StoreCode";
+            // 
+            // txtStoreCodeTid
+            // 
+            this.txtStoreCodeTid.Location = new System.Drawing.Point(127, 16);
+            this.txtStoreCodeTid.Name = "txtStoreCodeTid";
+            this.txtStoreCodeTid.Size = new System.Drawing.Size(170, 20);
+            this.txtStoreCodeTid.TabIndex = 12;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(996, 40);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(136, 23);
+            this.button9.TabIndex = 0;
+            this.button9.Text = "Tìm sản phẩm trong kho";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.groupBox3);
+            this.tabPage8.Controls.Add(this.groupBox2);
+            this.tabPage8.Controls.Add(this.groupBox1);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(1203, 629);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "Kiểm kho";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.dataGridView8);
+            this.groupBox3.Controls.Add(this.button13);
+            this.groupBox3.Controls.Add(this.button14);
+            this.groupBox3.Controls.Add(this.label34);
+            this.groupBox3.Controls.Add(this.label35);
+            this.groupBox3.Controls.Add(this.label36);
+            this.groupBox3.Controls.Add(this.label37);
+            this.groupBox3.Controls.Add(this.label38);
+            this.groupBox3.Controls.Add(this.txtNoteCheckBalanceWare);
+            this.groupBox3.Controls.Add(this.txtProductOptionIdWare);
+            this.groupBox3.Controls.Add(this.txtStoreCodeWare);
+            this.groupBox3.Controls.Add(this.txtChipCodeWare);
+            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox3.Location = new System.Drawing.Point(3, 369);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(1197, 240);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Tạo phiếu kiểm toàn bộ kho";
+            // 
+            // dataGridView8
+            // 
+            this.dataGridView8.AllowUserToAddRows = false;
+            this.dataGridView8.AllowUserToDeleteRows = false;
+            this.dataGridView8.AutoGenerateColumns = false;
+            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView8.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2});
+            this.dataGridView8.DataSource = this.bsCheckBalanceWare;
+            this.dataGridView8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.dataGridView8.Location = new System.Drawing.Point(645, 16);
+            this.dataGridView8.Name = "dataGridView8";
+            this.dataGridView8.ReadOnly = true;
+            this.dataGridView8.RowHeadersVisible = false;
+            this.dataGridView8.Size = new System.Drawing.Size(549, 221);
+            this.dataGridView8.TabIndex = 23;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "sum";
+            this.dataGridViewTextBoxColumn1.HeaderText = "sum";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "productOptionId";
+            this.dataGridViewTextBoxColumn2.HeaderText = "productOptionId";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // bsCheckBalanceWare
+            // 
+            this.bsCheckBalanceWare.DataSource = typeof(TMStore.ApiClient.Models.ProductOptionModel);
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(409, 183);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(119, 23);
+            this.button13.TabIndex = 16;
+            this.button13.Text = "Thêm chi tiết";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(453, 19);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(75, 23);
+            this.button14.TabIndex = 16;
+            this.button14.Text = "Xác nhận";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.Red;
+            this.label34.Location = new System.Drawing.Point(147, 156);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(325, 13);
+            this.label34.TabIndex = 22;
+            this.label34.Text = "Nhập các chip code cách nhau dấu phẩy: IDCHIP001, IDCHIP002";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(18, 51);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(28, 13);
+            this.label35.TabIndex = 16;
+            this.label35.Text = "note";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(43, 110);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(83, 13);
+            this.label36.TabIndex = 17;
+            this.label36.Text = "productOptionId";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(18, 22);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(57, 13);
+            this.label37.TabIndex = 17;
+            this.label37.Text = "StoreCode";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(43, 136);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(55, 13);
+            this.label38.TabIndex = 18;
+            this.label38.Text = "Chip code";
+            // 
+            // txtNoteCheckBalanceWare
+            // 
+            this.txtNoteCheckBalanceWare.Location = new System.Drawing.Point(125, 48);
+            this.txtNoteCheckBalanceWare.Name = "txtNoteCheckBalanceWare";
+            this.txtNoteCheckBalanceWare.Size = new System.Drawing.Size(387, 20);
+            this.txtNoteCheckBalanceWare.TabIndex = 19;
+            // 
+            // txtProductOptionIdWare
+            // 
+            this.txtProductOptionIdWare.Location = new System.Drawing.Point(150, 107);
+            this.txtProductOptionIdWare.Name = "txtProductOptionIdWare";
+            this.txtProductOptionIdWare.Size = new System.Drawing.Size(387, 20);
+            this.txtProductOptionIdWare.TabIndex = 20;
+            // 
+            // txtStoreCodeWare
+            // 
+            this.txtStoreCodeWare.Location = new System.Drawing.Point(125, 19);
+            this.txtStoreCodeWare.Name = "txtStoreCodeWare";
+            this.txtStoreCodeWare.Size = new System.Drawing.Size(249, 20);
+            this.txtStoreCodeWare.TabIndex = 20;
+            // 
+            // txtChipCodeWare
+            // 
+            this.txtChipCodeWare.Location = new System.Drawing.Point(150, 133);
+            this.txtChipCodeWare.Name = "txtChipCodeWare";
+            this.txtChipCodeWare.Size = new System.Drawing.Size(387, 20);
+            this.txtChipCodeWare.TabIndex = 21;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.dataGridView7);
+            this.groupBox2.Controls.Add(this.button12);
+            this.groupBox2.Controls.Add(this.button11);
+            this.groupBox2.Controls.Add(this.label29);
+            this.groupBox2.Controls.Add(this.label30);
+            this.groupBox2.Controls.Add(this.label33);
+            this.groupBox2.Controls.Add(this.label31);
+            this.groupBox2.Controls.Add(this.label32);
+            this.groupBox2.Controls.Add(this.txtNoteProduct);
+            this.groupBox2.Controls.Add(this.txtProductOptionIdConfirm);
+            this.groupBox2.Controls.Add(this.txtStoreCodeProduct);
+            this.groupBox2.Controls.Add(this.txtChipCodeProduct);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox2.Location = new System.Drawing.Point(3, 129);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1197, 240);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Tạo phiếu kiểm theo sản phẩm";
+            // 
+            // dataGridView7
+            // 
+            this.dataGridView7.AllowUserToAddRows = false;
+            this.dataGridView7.AllowUserToDeleteRows = false;
+            this.dataGridView7.AutoGenerateColumns = false;
+            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.sumDataGridViewTextBoxColumn2,
+            this.productOptionIdDataGridViewTextBoxColumn4});
+            this.dataGridView7.DataSource = this.bsCheckBalanceProduct;
+            this.dataGridView7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.dataGridView7.Location = new System.Drawing.Point(645, 16);
+            this.dataGridView7.Name = "dataGridView7";
+            this.dataGridView7.ReadOnly = true;
+            this.dataGridView7.RowHeadersVisible = false;
+            this.dataGridView7.Size = new System.Drawing.Size(549, 221);
+            this.dataGridView7.TabIndex = 23;
+            // 
+            // sumDataGridViewTextBoxColumn2
+            // 
+            this.sumDataGridViewTextBoxColumn2.DataPropertyName = "sum";
+            this.sumDataGridViewTextBoxColumn2.HeaderText = "sum";
+            this.sumDataGridViewTextBoxColumn2.Name = "sumDataGridViewTextBoxColumn2";
+            this.sumDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // productOptionIdDataGridViewTextBoxColumn4
+            // 
+            this.productOptionIdDataGridViewTextBoxColumn4.DataPropertyName = "productOptionId";
+            this.productOptionIdDataGridViewTextBoxColumn4.HeaderText = "productOptionId";
+            this.productOptionIdDataGridViewTextBoxColumn4.Name = "productOptionIdDataGridViewTextBoxColumn4";
+            this.productOptionIdDataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // bsCheckBalanceProduct
+            // 
+            this.bsCheckBalanceProduct.DataSource = typeof(TMStore.ApiClient.Models.ProductOptionModel);
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(409, 183);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(119, 23);
+            this.button12.TabIndex = 16;
+            this.button12.Text = "Thêm chi tiết";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(453, 19);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(75, 23);
+            this.button11.TabIndex = 16;
+            this.button11.Text = "Xác nhận";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.Red;
+            this.label29.Location = new System.Drawing.Point(147, 145);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(325, 13);
+            this.label29.TabIndex = 22;
+            this.label29.Text = "Nhập các chip code cách nhau dấu phẩy: IDCHIP001, IDCHIP002";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(18, 48);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(28, 13);
+            this.label30.TabIndex = 16;
+            this.label30.Text = "note";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(43, 99);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(83, 13);
+            this.label33.TabIndex = 17;
+            this.label33.Text = "productOptionId";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(18, 22);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(57, 13);
+            this.label31.TabIndex = 17;
+            this.label31.Text = "StoreCode";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(43, 125);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(55, 13);
+            this.label32.TabIndex = 18;
+            this.label32.Text = "Chip code";
+            // 
+            // txtNoteProduct
+            // 
+            this.txtNoteProduct.Location = new System.Drawing.Point(125, 45);
+            this.txtNoteProduct.Name = "txtNoteProduct";
+            this.txtNoteProduct.Size = new System.Drawing.Size(387, 20);
+            this.txtNoteProduct.TabIndex = 19;
+            // 
+            // txtProductOptionIdConfirm
+            // 
+            this.txtProductOptionIdConfirm.Location = new System.Drawing.Point(150, 96);
+            this.txtProductOptionIdConfirm.Name = "txtProductOptionIdConfirm";
+            this.txtProductOptionIdConfirm.Size = new System.Drawing.Size(387, 20);
+            this.txtProductOptionIdConfirm.TabIndex = 20;
+            // 
+            // txtStoreCodeProduct
+            // 
+            this.txtStoreCodeProduct.Location = new System.Drawing.Point(125, 19);
+            this.txtStoreCodeProduct.Name = "txtStoreCodeProduct";
+            this.txtStoreCodeProduct.Size = new System.Drawing.Size(249, 20);
+            this.txtStoreCodeProduct.TabIndex = 20;
+            // 
+            // txtChipCodeProduct
+            // 
+            this.txtChipCodeProduct.Location = new System.Drawing.Point(150, 122);
+            this.txtChipCodeProduct.Name = "txtChipCodeProduct";
+            this.txtChipCodeProduct.Size = new System.Drawing.Size(387, 20);
+            this.txtChipCodeProduct.TabIndex = 21;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.button10);
+            this.groupBox1.Controls.Add(this.label27);
+            this.groupBox1.Controls.Add(this.label28);
+            this.groupBox1.Controls.Add(this.label26);
+            this.groupBox1.Controls.Add(this.label25);
+            this.groupBox1.Controls.Add(this.txtNoteConfirmExport);
+            this.groupBox1.Controls.Add(this.txtInternalDeliveryId);
+            this.groupBox1.Controls.Add(this.txtRfidConfirmExport);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox1.Location = new System.Drawing.Point(3, 3);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1197, 126);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Xác nhận nhập kho ở điểm bán lẻ";
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(1061, 94);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 23);
+            this.button10.TabIndex = 16;
+            this.button10.Text = "Xác nhận";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Red;
+            this.label27.Location = new System.Drawing.Point(132, 50);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(292, 13);
+            this.label27.TabIndex = 15;
+            this.label27.Text = "Nhập các rfid cách nhau dấu phẩy: IDCHIP001, IDCHIP002";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(28, 99);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(28, 13);
+            this.label28.TabIndex = 13;
+            this.label28.Text = "note";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(28, 73);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(90, 13);
+            this.label26.TabIndex = 13;
+            this.label26.Text = "internalDeliveryID";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(28, 30);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(21, 13);
+            this.label25.TabIndex = 13;
+            this.label25.Text = "rfid";
+            // 
+            // txtNoteConfirmExport
+            // 
+            this.txtNoteConfirmExport.Location = new System.Drawing.Point(135, 96);
+            this.txtNoteConfirmExport.Name = "txtNoteConfirmExport";
+            this.txtNoteConfirmExport.Size = new System.Drawing.Size(900, 20);
+            this.txtNoteConfirmExport.TabIndex = 14;
+            // 
+            // txtInternalDeliveryId
+            // 
+            this.txtInternalDeliveryId.Location = new System.Drawing.Point(135, 70);
+            this.txtInternalDeliveryId.Name = "txtInternalDeliveryId";
+            this.txtInternalDeliveryId.Size = new System.Drawing.Size(900, 20);
+            this.txtInternalDeliveryId.TabIndex = 14;
+            // 
+            // txtRfidConfirmExport
+            // 
+            this.txtRfidConfirmExport.Location = new System.Drawing.Point(135, 27);
+            this.txtRfidConfirmExport.Name = "txtRfidConfirmExport";
+            this.txtRfidConfirmExport.Size = new System.Drawing.Size(900, 20);
+            this.txtRfidConfirmExport.TabIndex = 14;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.lbExpTime);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.txtBaseUrl);
+            this.panel1.Controls.Add(this.btnLogin);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.txtPassword);
+            this.panel1.Controls.Add(this.txtEmail);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1211, 44);
+            this.panel1.TabIndex = 4;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(794, 15);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(58, 13);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Expire time";
+            // 
+            // lbExpTime
+            // 
+            this.lbExpTime.AutoSize = true;
+            this.lbExpTime.Location = new System.Drawing.Point(858, 15);
+            this.lbExpTime.Name = "lbExpTime";
+            this.lbExpTime.Size = new System.Drawing.Size(10, 13);
+            this.lbExpTime.TabIndex = 0;
+            this.lbExpTime.Text = ".";
+            // 
+            // bsMatHang
+            // 
+            this.bsMatHang.DataSource = typeof(TMStore.ApiClient.Models.ProductItemModel);
+            // 
+            // bsChungLoai
+            // 
+            this.bsChungLoai.DataSource = typeof(TMStore.ApiClient.Models.ProductOptionModel);
             // 
             // frmMain
             // 
@@ -1620,6 +2077,7 @@ namespace TMStore.AppDemo
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grvStores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsStores)).EndInit();
             this.panel2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -1627,9 +2085,11 @@ namespace TMStore.AppDemo
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsProduct)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsProductOption)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
@@ -1640,42 +2100,50 @@ namespace TMStore.AppDemo
             this.panel3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.tabPage5.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsGoodsMaster)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsExportDetail)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.tabPage6.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.splitContainer3.Panel1.ResumeLayout(false);
             this.splitContainer3.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
             this.splitContainer3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsAdjustment)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.tabPage7.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
             this.splitContainer4.Panel1.ResumeLayout(false);
             this.splitContainer4.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).EndInit();
             this.splitContainer4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsStores)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsProduct)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsProductOption)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsGoodsMaster)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsExportDetail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsAdjustment)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsTid)).EndInit();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.tabPage8.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsCheckBalanceWare)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsCheckBalanceProduct)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsMatHang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsChungLoai)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsTid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1823,6 +2291,48 @@ namespace TMStore.AppDemo
         private System.Windows.Forms.BindingSource bsTid;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox txtInternalDeliveryId;
+        private System.Windows.Forms.TextBox txtRfidConfirmExport;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox txtNoteConfirmExport;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DataGridView dataGridView7;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TextBox txtNoteProduct;
+        private System.Windows.Forms.TextBox txtProductOptionIdConfirm;
+        private System.Windows.Forms.TextBox txtStoreCodeProduct;
+        private System.Windows.Forms.TextBox txtChipCodeProduct;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.DataGridView dataGridView8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.BindingSource bsCheckBalanceProduct;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.TextBox txtNoteCheckBalanceWare;
+        private System.Windows.Forms.TextBox txtProductOptionIdWare;
+        private System.Windows.Forms.TextBox txtStoreCodeWare;
+        private System.Windows.Forms.TextBox txtChipCodeWare;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sumDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productOptionIdDataGridViewTextBoxColumn4;
+        private System.Windows.Forms.BindingSource bsCheckBalanceWare;
     }
 }
 
