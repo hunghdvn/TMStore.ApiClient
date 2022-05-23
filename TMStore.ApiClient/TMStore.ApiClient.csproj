@@ -37,8 +37,8 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="RestSharp, Version=104.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\RestSharp.104.0\lib\net4\RestSharp.dll</HintPath>
+    <Reference Include="RestSharp, Version=104.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.104.5.0\lib\net4\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -53,6 +53,9 @@
     <Compile Include="Clients\Auth\AuthClient.cs" />
     <Compile Include="Clients\BaseResponse.cs" />
     <Compile Include="Clients\Auth\IAuthClient.cs" />
+    <Compile Include="Clients\Inventory\CheckBalanceRequest.cs" />
+    <Compile Include="Clients\Inventory\ConfirmExportResponse.cs" />
+    <Compile Include="Clients\Inventory\ConfirmExportRequest.cs" />
     <Compile Include="Clients\Tid\GetTidByProductResponse.cs" />
     <Compile Include="Clients\GoodsDeliveryNote\GoodsDeliveryNoteClient.cs" />
     <Compile Include="Clients\GoodsDeliveryNote\IGoodsDeliveryNoteClient.cs" />

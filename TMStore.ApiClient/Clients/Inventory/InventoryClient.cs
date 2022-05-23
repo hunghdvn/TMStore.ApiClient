@@ -41,6 +41,81 @@ namespace TMStore.ApiClient.Clients
             }
         }
 
+        public object TaoPhieuKiemKho(string storeCode, string note, List<ProductOptionModel> details)
+        {
+            try
+            {
+                if (storeCode.IsEmpty())
+                {
+                    throw new Exception("Chưa có mã kho");
+                }
+                if (details.IsEmpty())
+                {
+                    throw new Exception("Không có chi tiết");
+                }
+                var result = ApiHelper.Post<BaseResponse<object>>("api/Inventories/checkBalanceOptinalProduct", new CheckBalanceRequest { note = note, storeCode = storeCode, details = details });
+                if (!result.success)
+                {
+                    throw new Exception(result.errorCode + ": " + result.message);
+                }
+                return result.data;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public object TaoPhieuKiemToanBo(string storeCode, string note, List<ProductOptionModel> details)
+        {
+            try
+            {
+                if (storeCode.IsEmpty())
+                {
+                    throw new Exception("Chưa có mã kho");
+                }
+                if (details.IsEmpty())
+                {
+                    throw new Exception("Không có chi tiết");
+                }
+                var result = ApiHelper.Post<BaseResponse<ConfirmExportResponse>>("api/Inventories/checkBalanceEntireWareHouse", new CheckBalanceRequest { note = note, storeCode = storeCode, details = details });
+                if (!result.success)
+                {
+                    throw new Exception(result.errorCode + ": " + result.message);
+                }
+                return result.data;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public ConfirmExportResponse XacNhanNhapKho(string note, int internalDeliveryId, List<string> rfids)
+        {
+            try
+            {
+                if (internalDeliveryId <= 0)
+                {
+                    throw new Exception("Chưa có internalDeliveryId");
+                }
+                if (rfids.IsEmpty())
+                {
+                    throw new Exception("Không có rfids");
+                }
+                var result = ApiHelper.Post<BaseResponse<ConfirmExportResponse>>("api/Inventories/confirmExport", new ConfirmExportRequest { note = note, internalDeliveryID = internalDeliveryId, rfIds = rfids });
+                if (!result.success)
+                {
+                    throw new Exception(result.errorCode + ": " + result.message);
+                }
+                return result.data;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public List<ExportResult> XuatKho(string storeCode, string storeDestination, string note, string gate, List<string> rfIds)
         {
             try
