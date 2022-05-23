@@ -56,6 +56,8 @@
     <Compile Include="Clients\Inventory\CheckBalanceRequest.cs" />
     <Compile Include="Clients\Inventory\ConfirmExportResponse.cs" />
     <Compile Include="Clients\Inventory\ConfirmExportRequest.cs" />
+    <Compile Include="Clients\PurchaseOrder\IPurchaseOrderClient.cs" />
+    <Compile Include="Clients\PurchaseOrder\PurchaseOrderClient.cs" />
     <Compile Include="Clients\Tid\GetTidByProductResponse.cs" />
     <Compile Include="Clients\GoodsDeliveryNote\GoodsDeliveryNoteClient.cs" />
     <Compile Include="Clients\GoodsDeliveryNote\IGoodsDeliveryNoteClient.cs" />
@@ -87,6 +89,7 @@
     <Compile Include="Models\ProductItemModel.cs" />
     <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Models\ProductOptionModel.cs" />
+    <Compile Include="Models\PurchaseOrderModel.cs" />
     <Compile Include="Models\StoresModel.cs" />
     <Compile Include="Models\TidProductModel.cs" />
     <Compile Include="Models\TokenPayload.cs" />
